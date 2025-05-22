@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text.Json;
+using Microsoft.Win32;
 using Wox.Plugin.Logger;
 
 namespace Microsoft.PowerToys.Run.Plugin.Workspaces.WorkspacesHelper
@@ -37,11 +38,35 @@ namespace Microsoft.PowerToys.Run.Plugin.Workspaces.WorkspacesHelper
                 }
                 
                 var json = File.ReadAllText(workspacesFile);
-                var workspacesWrapper = JsonSerializer.Deserialize<WorkspacesWrapper>(json, _serializerOptions);
-                
-                if (workspacesWrapper?.Workspaces != null)
+
+                // Try to deserialize as an array of workspaces first
+                try
                 {
-                    Workspaces = workspacesWrapper.Workspaces.Where(w => w != null).ToList();
+                    var workspacesList = JsonSerializer.Deserialize<List<Workspace>>(json, _serializerOptions);
+                    if (workspacesList != null)
+                    {
+                        Workspaces = workspacesList.Where(w => w != null).ToList();
+                        return;
+                    }
+                }
+                catch (JsonException)
+                {
+                    // Try alternative format
+                }
+
+                // Try to deserialize as a wrapper object with a workspaces property
+                try
+                {
+                    var workspacesWrapper = JsonSerializer.Deserialize<WorkspacesWrapper>(json, _serializerOptions);
+                    if (workspacesWrapper?.Workspaces != null)
+                    {
+                        Workspaces = workspacesWrapper.Workspaces.Where(w => w != null).ToList();
+                        return;
+                    }
+                }
+                catch (JsonException ex)
+                {
+                    Log.Exception("Error deserializing workspaces", ex, typeof(WorkspacesAPI));
                 }
             }
             catch (Exception ex)
@@ -53,12 +78,36 @@ namespace Microsoft.PowerToys.Run.Plugin.Workspaces.WorkspacesHelper
 
         private string GetWorkspacesFilePath()
         {
-            // Get the PowerToys settings folder path
-            string localAppData = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
-            string powerToysSettingsPath = Path.Combine(localAppData, "Microsoft", "PowerToys");
-            
-            // Workspaces are stored in the Workspaces subfolder
-            return Path.Combine(powerToysSettingsPath, "Workspaces", "workspaces.json");
+            try
+            {
+                // Try to find the PowerToys installation folder from registry
+                using (var key = Registry.LocalMachine.OpenSubKey("Software\\Microsoft\\PowerToys"))
+                {
+                    if (key != null)
+                    {
+                        var installDir = key.GetValue("InstalledFolder") as string;
+                        if (!string.IsNullOrEmpty(installDir))
+                        {
+                            // Settings should be in %LocalAppData%\Microsoft\PowerToys
+                            string localAppData = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
+                            string powerToysSettingsPath = Path.Combine(localAppData, "Microsoft", "PowerToys");
+                            
+                            // Workspaces settings path
+                            return Path.Combine(powerToysSettingsPath, "Workspaces", "workspaces.json");
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Log.Exception("Error determining PowerToys installation folder", ex, typeof(WorkspacesAPI));
+            }
+
+            // Fallback to default location
+            string defaultAppData = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
+            string defaultSettingsPath = Path.Combine(defaultAppData, "Microsoft", "PowerToys", "Workspaces", "workspaces.json");
+            return defaultSettingsPath;
         }
     }
+}
 }
