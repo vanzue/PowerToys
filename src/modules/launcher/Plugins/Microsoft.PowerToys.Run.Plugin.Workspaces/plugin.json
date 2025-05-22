@@ -1,0 +1,13 @@
+{
+  "ID": "24FFBA81A11C43719403ACFC5C086CDF",
+  "ActionKeyword": "*",
+  "IsGlobal": false,
+  "Name": "PowerToys Workspaces",
+  "Author": "Microsoft",
+  "Version": "1.0.0",
+  "Language": "csharp",
+  "Website": "https://aka.ms/powertoys",
+  "ExecuteFileName": "Microsoft.PowerToys.Run.Plugin.Workspaces.dll",
+  "IcoPathDark": "Images\\workspaces.dark.png",
+  "IcoPathLight": "Images\\workspaces.light.png"
+}
