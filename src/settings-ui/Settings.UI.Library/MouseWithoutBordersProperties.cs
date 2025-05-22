@@ -36,6 +36,9 @@ namespace Microsoft.PowerToys.Settings.UI.Library
 
         [CmdConfigureIgnore]
         public static HotkeySettings DefaultHotKeyToggleEasyMouse => new HotkeySettings(true, true, true, false, 0x45);
+        
+        [JsonConverter(typeof(BoolPropertyJsonConverter))]
+        public bool DisableInFullscreenMode { get; set; }
 
         [CmdConfigureIgnore]
         public StringProperty SecurityKey { get; set; }
@@ -172,6 +175,7 @@ namespace Microsoft.PowerToys.Settings.UI.Library
             DeviceID = new StringProperty(string.Empty);
             ShowOriginalUI = false;
             UseService = false;
+            DisableInFullscreenMode = true;
 
             HotKeySwitchMachine = new IntProperty(0x70); // VK.F1
             ToggleEasyMouseShortcut = DefaultHotKeyToggleEasyMouse;

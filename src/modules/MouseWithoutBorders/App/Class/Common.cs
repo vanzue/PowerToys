@@ -1513,6 +1513,33 @@ namespace MouseWithoutBorders
             return buffer.ToString();
         }
 
+        internal static bool IsWindowFullscreen()
+        {
+            try
+            {
+                uint state = 0;
+                // Use SHQueryUserNotificationState to check if a fullscreen app is running
+                // https://learn.microsoft.com/en-us/windows/win32/api/shellapi/ne-shellapi-query_user_notification_state
+                int result = NativeMethods.SHQueryUserNotificationState(out state);
+                if (result == 0) // S_OK
+                {
+                    // QUNS_RUNNING_D3D_FULL_SCREEN = 2
+                    // QUNS_BUSY = 3
+                    // QUNS_PRESENTATION_MODE = 4
+                    if (state == 2 || state == 3 || state == 4)
+                    {
+                        return true;
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                Logger.Log(e);
+            }
+
+            return false;
+        }
+
         internal static void MMSleep(double secs)
         {
             for (int i = 0; i < secs * 10; i++)

@@ -1101,6 +1101,23 @@ namespace Microsoft.PowerToys.Settings.UI.ViewModels
             }
         }
 
+        public bool DisableInFullscreenMode
+        {
+            get
+            {
+                return Settings.Properties.DisableInFullscreenMode;
+            }
+
+            set
+            {
+                if (Settings.Properties.DisableInFullscreenMode != value)
+                {
+                    Settings.Properties.DisableInFullscreenMode = value;
+                    NotifyPropertyChanged();
+                }
+            }
+        }
+
         private IndexedObservableCollection<DeviceViewModel> machineMatrixString;
 
         public partial class DeviceViewModel : Observable

@@ -974,6 +974,25 @@ namespace MouseWithoutBorders.Class
             }
         }
 
+        internal bool DisableInFullscreenMode
+        {
+            get
+            {
+                lock (_loadingSettingsLock)
+                {
+                    return _properties.DisableInFullscreenMode;
+                }
+            }
+
+            set
+            {
+                lock (_loadingSettingsLock)
+                {
+                    _properties.DisableInFullscreenMode = value;
+                }
+            }
+        }
+
         // Was a value read from registry on original Mouse Without Border, but default should be true. We wrongly released it as false, so we're forcing true here.
         // This value wasn't changeable from UI, anyway.
         internal bool StealFocusWhenSwitchingMachine => true;

@@ -45,6 +45,9 @@ namespace MouseWithoutBorders.Class
     {
 #if !MM_HELPER
 
+        [DllImport("shell32.dll")]
+        internal static extern int SHQueryUserNotificationState(out uint state);
+
         [DllImport("user32.dll")]
         internal static extern IntPtr SetClipboardViewer(IntPtr hWndNewViewer);
 

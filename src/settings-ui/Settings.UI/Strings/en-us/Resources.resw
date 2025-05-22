@@ -388,6 +388,12 @@
   <data name="MouseWithoutBorders_BlockMouseAtScreenCorners.Description" xml:space="preserve">
     <value>To avoid accident machine-switch at screen corners.</value>
   </data>
+  <data name="MouseWithoutBorders_DisableInFullscreenMode.Header" xml:space="preserve">
+    <value>Disable in fullscreen mode</value>
+  </data>
+  <data name="MouseWithoutBorders_DisableInFullscreenMode.Description" xml:space="preserve">
+    <value>Temporarily disable mouse switching to other computers when a fullscreen application is running</value>
+  </data>
   <data name="MouseWithoutBorders_ShowClipboardAndNetworkStatusMessages.Description" xml:space="preserve">
     <value>Show clipboard activities and network status in system tray notifications</value>
   </data>
