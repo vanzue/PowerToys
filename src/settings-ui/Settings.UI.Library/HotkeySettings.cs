@@ -155,6 +155,12 @@ namespace Microsoft.PowerToys.Settings.UI.Library
                 return false;
             }
 
+            // Allow Space key (0x20) without modifiers as a valid hotkey
+            if (!Alt && !Ctrl && !Win && !Shift && Code == 0x20)
+            {
+                return true;
+            }
+
             return (Alt || Ctrl || Win || Shift) && Code != 0;
         }
 
