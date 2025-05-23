@@ -197,10 +197,12 @@ namespace WorkspacesEditor.ViewModels
         {
             string basePath = AppDomain.CurrentDomain.BaseDirectory;
             string shortcutAddress = Path.Combine(FolderUtils.Desktop(), project.Name + ".lnk");
-            string shortcutIconFilename = Path.Combine(FolderUtils.DataFolder(), project.Id + ".ico");
+            string iconPath = Path.Combine(FolderUtils.DataFolder(), "WorkspacesIcons");
+            string shortcutIconFilename = Path.Combine(iconPath, project.Id + ".ico");
 
             // Ensure directory exists
             Directory.CreateDirectory(FolderUtils.DataFolder());
+            Directory.CreateDirectory(iconPath);
 
             if (!project.IsShortcutNeeded)
             {
