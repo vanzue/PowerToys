@@ -36,7 +36,7 @@ namespace Microsoft.PowerToys.Settings.UI.Library
 
         [CmdConfigureIgnore]
         public static HotkeySettings DefaultHotKeyToggleEasyMouse => new HotkeySettings(true, true, true, false, 0x45);
-        
+
         [JsonConverter(typeof(BoolPropertyJsonConverter))]
         public bool DisableInFullscreenMode { get; set; }
 

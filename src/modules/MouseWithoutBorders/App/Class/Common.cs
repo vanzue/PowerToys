@@ -1513,14 +1513,14 @@ namespace MouseWithoutBorders
             return buffer.ToString();
         }
 
-        private static bool? cachedFullscreenState = null;
-        private static long lastFullscreenCheckTime = 0;
+        private static bool? cachedFullscreenState;
+        private static long lastFullscreenCheckTime;
         private const int FULLSCREEN_CHECK_INTERVAL_MS = 500; // Check every 500ms
 
         internal static bool IsWindowFullscreen()
         {
             long currentTime = GetTick();
-            
+
             // If we have a cached state and it's not expired yet, return the cached value
             if (cachedFullscreenState.HasValue && (currentTime - lastFullscreenCheckTime) < FULLSCREEN_CHECK_INTERVAL_MS)
             {
@@ -1531,6 +1531,7 @@ namespace MouseWithoutBorders
             try
             {
                 uint state = 0;
+
                 // Use SHQueryUserNotificationState to check if a fullscreen app is running
                 // https://learn.microsoft.com/en-us/windows/win32/api/shellapi/ne-shellapi-query_user_notification_state
                 int result = NativeMethods.SHQueryUserNotificationState(out state);
@@ -1546,13 +1547,14 @@ namespace MouseWithoutBorders
                         return true;
                     }
                 }
-                
+
                 cachedFullscreenState = false;
                 lastFullscreenCheckTime = currentTime;
             }
             catch (Exception e)
             {
                 Logger.Log(e);
+
                 // In case of error, don't update the cache
             }
 
