@@ -955,6 +955,7 @@ namespace MouseWithoutBorders.Class
                     UpdateTcpSockets(dummyTcp, SocketStatus.Timeout);
 
                     Common.ShowToolTip(e.Message + ": " + machineName, 10000, ToolTipIcon.Warning, Setting.Values.ShowClipNetStatus);
+                    Common.ShowConnectionError("Host Not Found", $"Cannot resolve hostname: {machineName}\n\n{e.Message}", 10000);
 
                     Logger.Log($"{nameof(StartNewTcpClient)}.{nameof(Dns.GetHostEntry)}: {e.Message}");
                 }
@@ -1049,7 +1050,9 @@ namespace MouseWithoutBorders.Class
 
                     if (!useName2IP)
                     {
-                        Common.ShowToolTip($"Cannot resolve IP Address of the remote machine: {machineName}.\r\nPlease fix your DNS or use the Mapping option in the Settings form.", 10000, ToolTipIcon.Warning, Setting.Values.ShowClipNetStatus);
+                        string errorMessage = $"Cannot resolve IP Address of the remote machine: {machineName}.\r\nPlease fix your DNS or use the Mapping option in the Settings form.";
+                        Common.ShowToolTip(errorMessage, 10000, ToolTipIcon.Warning, Setting.Values.ShowClipNetStatus);
+                        Common.ShowConnectionError("IP Resolution Failed", errorMessage, 10000);
                     }
                 }
             }
@@ -1190,6 +1193,7 @@ namespace MouseWithoutBorders.Class
                                 string message = $"Connection timed out: {machineName}:{ip}";
 
                                 Common.ShowToolTip(message, 5000, ToolTipIcon.Warning, Setting.Values.ShowClipNetStatus);
+                                Common.ShowConnectionError("Connection Timeout", $"Unable to connect to {machineName} ({ip}) after timeout period.\n\nPlease check if the machine is reachable and that no firewall is blocking the connection.", 5000);
 
                                 UpdateTcpSockets(tcp, SocketStatus.Timeout);
                                 return;
@@ -1216,11 +1220,14 @@ namespace MouseWithoutBorders.Class
 
                     if (localIP != null && (localIP.StartsWith("169.254", StringComparison.InvariantCulture) || localIP.ToString().StartsWith("0.0", StringComparison.InvariantCulture)))
                     {
-                        Common.ShowToolTip($"Error: The machine has limited connectivity on [{localIP}].", 5000, ToolTipIcon.Warning, Setting.Values.ShowClipNetStatus);
+                        string errorMessage = $"Error: The machine has limited connectivity on [{localIP}].";
+                        Common.ShowToolTip(errorMessage, 5000, ToolTipIcon.Warning, Setting.Values.ShowClipNetStatus);
+                        Common.ShowConnectionError("Limited Connectivity", $"The network connection has limited connectivity on [{localIP}].\n\nPlease check your network settings and ensure you have a valid IP address.", 5000);
                     }
                     else
                     {
                         Logger.TelemetryLogTrace($"{nameof(StartNewTcpClientThread)}: Error: {e.Message} on the IP Address: {localIP}", SeverityLevel.Error);
+                        Common.ShowConnectionError("Connection Error", $"Failed to connect to {machineName}.\n\nError: {e.Message}", 5000);
                     }
                 }
                 catch (Exception e)
@@ -1338,6 +1345,7 @@ namespace MouseWithoutBorders.Class
                         if (receivedCount > 0)
                         {
                             Common.ShowToolTip($"Invalid package from {remoteMachine}. Ensure the security keys are the same in both machines.", 5000, ToolTipIcon.Warning, false);
+                            Common.ShowConnectionError("Security Key Mismatch", $"Invalid security key received from {remoteMachine}.\n\nPlease ensure the security keys are the same on all machines.", 5000, false);
                         }
 
                         if (errCount > 5)
