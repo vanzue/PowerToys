@@ -5,7 +5,7 @@
 //////////////////////////////
 // Non-localizable
 
-#define FILE_DESCRIPTION "PowerToys PowerPreview"
+#define FILE_DESCRIPTION "PowerToys File Preview Handlers"
 #define INTERNAL_NAME "PowerToys.powerpreview"
 #define ORIGINAL_FILENAME "PowerToys.powerpreview.dll"
 #define IDS_EXPLR_ICONS_PREV_STTNGS_GROUP_HEADER_ID 1001
