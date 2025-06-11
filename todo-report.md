@@ -1,6 +1,6 @@
 # PowerToys TODO Report
 
-Generated on: 2025-06-11 03:38:12 (Cleaned of self-referential TODO items)
+Generated on: 2025-06-11 03:38:12 (Cleaned of self-referential TODO items - scripts and report references removed)
 Repository root: /home/runner/work/PowerToys/PowerToys
 Total TODO items found: 281
 
@@ -29,7 +29,7 @@ Total TODO items found: 281
 - **Module: keyboardmanager**: 2 TODOs
 - **Core: runner**: 2 TODOs
 - **Module: CropAndLock**: 2 TODOs
-- **Other**: 2 TODOs
+
 - **Module: ShortcutGuide**: 1 TODOs
 - **Core: Update**: 1 TODOs
 - **Module: MeasureTool**: 1 TODOs
@@ -600,43 +600,6 @@ Total TODO items found: 281
 
 - `src/modules/ZoomIt/ZoomItModuleInterface/dllmain.cpp:69` [Medium] - // TODO: Read settings from Registry.
 - `src/modules/ZoomIt/ZoomItModuleInterface/dllmain.cpp:84` [Medium] - // TODO: Save settings to registry.
-
-
-#### Other (1241 TODOs)
-
-
-**UI/UX** (271 items):
-
-
-
-#### Tools (64 TODOs)
-
-**Bug Fix** (1 items):
-
-
-**Feature** (1 items):
-
-
-**General** (55 items):
-
-
-**Logging/Debug** (2 items):
-
-
-**Performance** (1 items):
-
-
-**Refactoring** (1 items):
-
-
-**Security** (1 items):
-
-
-**Testing** (1 items):
-
-
-**UI/UX** (1 items):
-
 
 
 ---
