@@ -355,4 +355,4 @@ src/common/Telemetry/*.etl
 /MSBuildCacheLogs/
 
 # Generated TODO report (created by tools/build/collect-todos.ps1)
-todo-report.md
+# todo-report.md  # Commented out to allow checking in the report
