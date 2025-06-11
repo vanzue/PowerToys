@@ -1,25 +1,23 @@
 # PowerToys TODO Report
 
-Generated on: 2025-06-11 03:38:12
+Generated on: 2025-06-11 03:38:12 (Cleaned of self-referential TODO items)
 Repository root: /home/runner/work/PowerToys/PowerToys
-Total TODO items found: 1618
+Total TODO items found: 281
 
 ## Summary by Component
-- **Other**: 1241 TODOs
 - **Module: cmdpal**: 118 TODOs
-- **Tools**: 64 TODOs
 - **Core: settings-ui**: 38 TODOs
-- **Documentation**: 29 TODOs
 - **Module: launcher**: 15 TODOs
 - **Module: MouseWithoutBorders**: 13 TODOs
 - **Core: Monaco**: 12 TODOs
 - **Module: imageresizer**: 12 TODOs
 - **Module: peek**: 11 TODOs
+- **Documentation**: 9 TODOs
 - **Core: common**: 9 TODOs
 - **Module: FileLocksmith**: 8 TODOs
 - **Module: powerrename**: 5 TODOs
-- **Module: alwaysontop**: 4 TODOs
 - **Module: MouseUtils**: 4 TODOs
+- **Module: alwaysontop**: 4 TODOs
 - **Module: PowerOCR**: 4 TODOs
 - **Module: fancyzones**: 3 TODOs
 - **Module: colorPicker**: 3 TODOs
@@ -31,58 +29,32 @@ Total TODO items found: 1618
 - **Module: keyboardmanager**: 2 TODOs
 - **Core: runner**: 2 TODOs
 - **Module: CropAndLock**: 2 TODOs
+- **Other**: 2 TODOs
 - **Module: ShortcutGuide**: 1 TODOs
 - **Core: Update**: 1 TODOs
 - **Module: MeasureTool**: 1 TODOs
 - **Module: poweraccent**: 1 TODOs
 
 ## Summary by Category
-- **General**: 940 TODOs
-- **UI/UX**: 283 TODOs
-- **Feature**: 153 TODOs
-- **Logging/Debug**: 92 TODOs
-- **Bug Fix**: 89 TODOs
-- **Refactoring**: 26 TODOs
-- **Testing**: 19 TODOs
-- **Performance**: 13 TODOs
-- **Security**: 3 TODOs
+- **General**: 165 TODOs
+- **UI/UX**: 52 TODOs
+- **Feature**: 38 TODOs
+- **Logging/Debug**: 24 TODOs
+- **Bug Fix**: 16 TODOs
+- **Refactoring**: 7 TODOs
+- **Performance**: 3 TODOs
+- **Testing**: 3 TODOs
+- **Security**: 1 TODOs
 
 ## Summary by Priority
-- **High**: 28 TODOs
-- **Medium**: 1574 TODOs
-- **Low**: 16 TODOs
+- **High**: 0 TODOs
+- **Medium**: 278 TODOs
+- **Low**: 3 TODOs
 
 ## Detailed TODO List
 
 ### High Priority TODOs
-- **[Documentation]** `doc/devdocs/tools/todo-collection-tool.md:39` - - **High Priority TODOs**: List of TODOs marked as high priority
-- **[Other]** `test-todo-report.md:66` - - **[Tools]** `tools/build/collect-todos.ps1:239` - Write-Host "- High Priority: $(($TodoItems | Where-Object { $_.Priority -eq 'High' }).Count)" -ForegroundColor Red
-- **[Other]** `test-todo-report.md:782` - - `todo-report.md:196` [High] - - `doc/devdocs/tools/todo-collection-tool.md:39` [High] - - **High Priority TODOs**: List of TODOs marked as high priority
-- **[Other]** `test-todo-report.md:746` - - `todo-report.md:56` [High] - - **[Documentation]** `doc/devdocs/tools/todo-collection-tool.md:39` - - **High Priority TODOs**: List of TODOs marked as high priority
-- **[Other]** `test-todo-report.md:745` - - `todo-report.md:55` [High] - ### High Priority TODOs
-- **[Other]** `test-todo-report.md:187` - - `doc/devdocs/tools/todo-collection-tool.md:39` [High] - - **High Priority TODOs**: List of TODOs marked as high priority
-- **[Other]** `test-todo-report.md:1099` - - `tools/build/collect-todos.ps1:165` [High] - # High priority TODOs
-- **[Other]** `test-todo-report.md:65` - - **[Tools]** `tools/build/collect-todos.ps1:172` - $ReportContent += "*No high priority TODOs found.*`n"
-- **[Other]** `test-todo-report.md:64` - - **[Tools]** `tools/build/collect-todos.ps1:165` - # High priority TODOs
-- **[Other]** `test-todo-report.md:63` - - **[Tools]** `tools/build/collect-todos.ps1:161` - ### High Priority TODOs
-- **[Other]** `test-todo-report.md:62` - - **[Tools]** `tools/build/collect-todos.ps1:93` - if ($TodoText -match "(?i)\b(critical|urgent|important|asap|high priority)\b") {
-- **[Other]** `test-todo-report.md:61` - - **[Other]** `todo-report.md:196` - - `doc/devdocs/tools/todo-collection-tool.md:39` [High] - - **High Priority TODOs**: List of TODOs marked as high priority
-- **[Other]** `test-todo-report.md:60` - - **[Other]** `todo-report.md:56` - - **[Documentation]** `doc/devdocs/tools/todo-collection-tool.md:39` - - **High Priority TODOs**: List of TODOs marked as high priority
-- **[Other]** `test-todo-report.md:59` - - **[Other]** `todo-report.md:55` - ### High Priority TODOs
-- **[Other]** `test-todo-report.md:58` - - **[Documentation]** `doc/devdocs/tools/todo-collection-tool.md:39` - - **High Priority TODOs**: List of TODOs marked as high priority
-- **[Other]** `test-todo-report.md:57` - ### High Priority TODOs
-- **[Other]** `test-todo-report.md:1104` - - `tools/build/collect-todos.ps1:172` [High] - $ReportContent += "*No high priority TODOs found.*`n"
-- **[Other]** `test-todo-report.md:1118` - - `tools/build/collect-todos.ps1:239` [High] - Write-Host "- High Priority: $(($TodoItems | Where-Object { $_.Priority -eq 'High' }).Count)" -ForegroundColor Red
-- **[Other]** `test-todo-report.md:1082` - - `tools/build/collect-todos.ps1:93` [High] - if ($TodoText -match "(?i)\b(critical|urgent|important|asap|high priority)\b") {
-- **[Other]** `test-todo-report.md:1098` - - `tools/build/collect-todos.ps1:161` [High] - ### High Priority TODOs
-- **[Other]** `todo-report.md:55` - ### High Priority TODOs
-- **[Other]** `todo-report.md:196` - - `doc/devdocs/tools/todo-collection-tool.md:39` [High] - - **High Priority TODOs**: List of TODOs marked as high priority
-- **[Other]** `todo-report.md:56` - - **[Documentation]** `doc/devdocs/tools/todo-collection-tool.md:39` - - **High Priority TODOs**: List of TODOs marked as high priority
-- **[Tools]** `tools/build/collect-todos.ps1:93` - if ($TodoText -match "(?i)\b(critical|urgent|important|asap|high priority)\b") {
-- **[Tools]** `tools/build/collect-todos.ps1:161` - ### High Priority TODOs
-- **[Tools]** `tools/build/collect-todos.ps1:165` - # High priority TODOs
-- **[Tools]** `tools/build/collect-todos.ps1:172` - $ReportContent += "*No high priority TODOs found.*`n"
-- **[Tools]** `tools/build/collect-todos.ps1:239` - Write-Host "- High Priority: $(($TodoItems | Where-Object { $_.Priority -eq 'High' }).Count)" -ForegroundColor Red
+*No high priority TODOs found.*
 
 ### TODOs by Component
 
@@ -180,9 +152,9 @@ Total TODO items found: 1618
 - `src/Update/PowerToys.Update.cpp:68` [Medium] - if (state.state == UpdateState::readyToDownload || state.state == UpdateState::errorDownloading)
 
 
-#### Documentation (29 TODOs)
+#### Documentation (9 TODOs)
 
-**General** (28 items):
+**General** (9 items):
 
 - `doc/devdocs/embedded-msix.md:5` [Medium] - - uncomment everything near "TODO: Use to activate embedded MSIX" comments
 - `doc/devdocs/modules/powerrename.md:2` [Medium] - TODO
@@ -193,29 +165,9 @@ Total TODO items found: 1618
 - `doc/devdocs/modules/powerrename.md:17` [Medium] - TODO
 - `doc/devdocs/modules/powerrename.md:20` [Medium] - TODO
 - `doc/devdocs/modules/powerrename.md:23` [Medium] - TODO
-- `doc/devdocs/tools/readme.md:20` [Medium] - * [TODO Collection Tool](todo-collection-tool.md) - A tool to scan the codebase and generate a comprehensive report of all TODO items for prioritization.
-- `doc/devdocs/tools/todo-collection-tool.md:1` [Medium] - # TODO Collection Tool
-- `doc/devdocs/tools/todo-collection-tool.md:3` [Medium] - The TODO Collection Tool is a PowerShell script that scans the PowerToys codebase and generates a comprehensive report of all TODO items for prioritization and tracking purposes.
-- `doc/devdocs/tools/todo-collection-tool.md:7` [Medium] - The script is located at: `tools/build/collect-todos.ps1`
-- `doc/devdocs/tools/todo-collection-tool.md:14` [Medium] - .\tools\build\collect-todos.ps1
-- `doc/devdocs/tools/todo-collection-tool.md:17` [Medium] - This will generate a `todo-report.md` file in the repository root.
-- `doc/devdocs/tools/todo-collection-tool.md:23` [Medium] - .\tools\build\collect-todos.ps1 -OutputPath .\docs\todo-analysis.md
-- `doc/devdocs/tools/todo-collection-tool.md:26` [Medium] - .\tools\build\collect-todos.ps1 -ShowHelp
-- `doc/devdocs/tools/todo-collection-tool.md:34` [Medium] - - **Component Summary**: TODOs grouped by component/module
-- `doc/devdocs/tools/todo-collection-tool.md:36` [Medium] - - **Priority Summary**: TODOs grouped by priority (High, Medium, Low)
-- `doc/devdocs/tools/todo-collection-tool.md:39` [High] - - **High Priority TODOs**: List of TODOs marked as high priority
-- `doc/devdocs/tools/todo-collection-tool.md:40` [Medium] - - **TODOs by Component**: Detailed breakdown organized by component and category
-- `doc/devdocs/tools/todo-collection-tool.md:44` [Medium] - The tool automatically categorizes TODOs based on keywords found in the TODO text:
-- `doc/devdocs/tools/todo-collection-tool.md:90` [Medium] - - Total TODOs: 301
-- `doc/devdocs/tools/todo-collection-tool.md:95` [Medium] - Top components with TODOs:
-- `doc/devdocs/tools/todo-collection-tool.md:106` [Medium] - Run the tool regularly (e.g., before releases) to get an updated view of TODO items:
-- `doc/devdocs/tools/todo-collection-tool.md:109` [Medium] - .\tools\build\collect-todos.ps1 -OutputPath .\release-todos-$(Get-Date -Format "yyyy-MM-dd").md
-- `doc/devdocs/tools/todo-collection-tool.md:113` [Medium] - The tool can be integrated into build pipelines to track TODO debt over time.
-- `doc/devdocs/tools/todo-collection-tool.md:116` [Medium] - Use the generated report in team meetings to discuss and prioritize TODO items based on:
 
 **Performance** (1 items):
 
-- `doc/devdocs/tools/todo-collection-tool.md:35` [Medium] - - **Category Summary**: TODOs grouped by category (Feature, Bug Fix, Performance, etc.)
 
 
 #### Module: AdvancedPaste (3 TODOs)
@@ -655,371 +607,36 @@ Total TODO items found: 1618
 
 **UI/UX** (271 items):
 
-- `test-todo-report.md:11` [Medium] - - **Core: settings-ui**: 38 TODOs
-- `test-todo-report.md:41` [Medium] - - **UI/UX**: 102 TODOs
-- `test-todo-report.md:104` [Medium] - #### Core: settings-ui (38 TODOs)
-- `test-todo-report.md:117` [Medium] - - `src/settings-ui/Settings.UI.Library/GeneralSettings.cs:71` [Medium] - public bool AutoDownloadUpdates { get; set; }
-- `test-todo-report.md:118` [Medium] - - `src/settings-ui/Settings.UI.Library/GeneralSettings.cs:87` [Medium] - AutoDownloadUpdates = false;
-- `test-todo-report.md:119` [Medium] - - `src/settings-ui/Settings.UI.Library/UpdatingSettings.cs:20` [Medium] - ReadyToDownload,
-- `test-todo-report.md:120` [Medium] - - `src/settings-ui/Settings.UI.UnitTests/Cmd/SetSettingCommandTests.cs:58` [Medium] - [DataRow(typeof(GeneralSettings), nameof(GeneralSettings.AutoDownloadUpdates), "true")]
-- `test-todo-report.md:121` [Medium] - - `src/settings-ui/Settings.UI.UnitTests/ViewModelTests/General.cs:64` [Medium] - Assert.AreEqual(originalGeneralSettings.AutoDownloadUpdates, viewModel.AutoDownloadUpdates);
-- `test-todo-report.md:122` [Medium] - - `src/settings-ui/Settings.UI/SettingsXAML/Controls/AlphaColorPickerButton.xaml:12` [Medium] - <!--TODO(stefan): ToDisplayName is no longer available in ColorHelper
-- `test-todo-report.md:123` [Medium] - - `src/settings-ui/Settings.UI/SettingsXAML/Controls/ColorPickerButton.xaml:12` [Medium] - <!--TODO(stefan): ToDisplayName is no longer available in ColorHelper
-- `test-todo-report.md:124` [Medium] - - `src/settings-ui/Settings.UI/SettingsXAML/OOBE/Views/OobeAdvancedPaste.xaml.cs:42` [Medium] - // TODO(stefan): Check how to remove additional space if item is set to Collapsed.
-- `test-todo-report.md:125` [Medium] - - `src/settings-ui/Settings.UI/SettingsXAML/Views/AwakePage.xaml.cs:71` [Medium] - /// TODO: The logic here needs to be optimized since doing string comparison on values is not ideal.
-- `test-todo-report.md:126` [Medium] - - `src/settings-ui/Settings.UI/SettingsXAML/Views/GeneralPage.xaml:75` [Medium] - IsEnabled="{x:Bind Mode=OneWay, Path=ViewModel.IsAutoDownloadUpdatesCardEnabled}"
-- `test-todo-report.md:127` [Medium] - - `src/settings-ui/Settings.UI/SettingsXAML/Views/GeneralPage.xaml:77` [Medium] - <controls:CheckBoxWithDescriptionControl x:Uid="GeneralPage_AutoDownloadAndInstallUpdates" IsChecked="{Binding Mode=TwoWay, Path=AutoDownloadUpdates}" />
-- `test-todo-report.md:128` [Medium] - - `src/settings-ui/Settings.UI/SettingsXAML/Views/GeneralPage.xaml:108` [Medium] - IsOpen="{x:Bind ViewModel.PowerToysUpdatingState, Mode=OneWay, Converter={StaticResource UpdateStateToBoolConverter}, ConverterParameter=ReadyToDownload}"
-- `test-todo-report.md:129` [Medium] - - `src/settings-ui/Settings.UI/SettingsXAML/Views/GeneralPage.xaml:109` [Medium] - IsTabStop="{x:Bind ViewModel.PowerToysUpdatingState, Mode=OneWay, Converter={StaticResource UpdateStateToBoolConverter}, ConverterParameter=ReadyToDownload}"
-- `test-todo-report.md:130` [Medium] - - `src/settings-ui/Settings.UI/SettingsXAML/Views/GeneralPage.xaml:172` [Medium] - x:Uid="General_FailedToDownloadTheNewVersion"
-- `test-todo-report.md:131` [Medium] - - `src/settings-ui/Settings.UI/SettingsXAML/Views/GeneralPage.xaml:181` [Medium] - x:Uid="General_TryAgainToDownloadAndInstall"
-- `test-todo-report.md:132` [Medium] - - `src/settings-ui/Settings.UI/SettingsXAML/Views/GeneralPage.xaml.cs:144` [Medium] - // TODO: go back PickSingleFolderAsync when it's fixed
-- `test-todo-report.md:133` [Medium] - - `src/settings-ui/Settings.UI/SettingsXAML/Views/MouseWithoutBordersPage.xaml:120` [Medium] - <!--  TODO: colors?  -->
-- `test-todo-report.md:134` [Medium] - - `src/settings-ui/Settings.UI/SettingsXAML/Views/PowerLauncherPage.xaml:624` [Medium] - <!-- todo(Stefan): InfoBadge not available
-- `test-todo-report.md:135` [Medium] - - `src/settings-ui/Settings.UI/SettingsXAML/Views/ZoomItPage.xaml.cs:77` [Medium] - // TODO: chooseFont.lpTemplateName = FORMATDLGORD31; and CHOOSE_FONT_FLAGS.CF_ENABLETEMPLATE
-- `test-todo-report.md:136` [Medium] - - `src/settings-ui/Settings.UI/ViewModels/DashboardViewModel.cs:67` [Medium] - UpdateAvailable = updatingSettingsConfig != null && (updatingSettingsConfig.State == UpdatingSettings.UpdatingState.ReadyToInstall || updatingSettingsConfig.State == UpdatingSettings.UpdatingState.ReadyToDownload);
-- `test-todo-report.md:137` [Medium] - - `src/settings-ui/Settings.UI/ViewModels/Flyout/LauncherViewModel.cs:60` [Medium] - if (updatingSettingsConfig.State == UpdatingSettings.UpdatingState.ReadyToInstall || updatingSettingsConfig.State == UpdatingSettings.UpdatingState.ReadyToDownload)
-- `test-todo-report.md:138` [Medium] - - `src/settings-ui/Settings.UI/ViewModels/GeneralViewModel.cs:151` [Medium] - _autoDownloadUpdates = GeneralSettingsConfig.AutoDownloadUpdates;
-- `test-todo-report.md:139` [Medium] - - `src/settings-ui/Settings.UI/ViewModels/GeneralViewModel.cs:170` [Medium] - _autoDownloadUpdatesIsGpoDisabled = GPOWrapper.GetDisableAutomaticUpdateDownloadValue() == GpoRuleConfigured.Enabled;
-- `test-todo-report.md:140` [Medium] - - `src/settings-ui/Settings.UI/ViewModels/GeneralViewModel.cs:243` [Medium] - private bool _autoDownloadUpdates;
-- `test-todo-report.md:141` [Medium] - - `src/settings-ui/Settings.UI/ViewModels/GeneralViewModel.cs:244` [Medium] - private bool _autoDownloadUpdatesIsGpoDisabled;
-- `test-todo-report.md:142` [Medium] - - `src/settings-ui/Settings.UI/ViewModels/GeneralViewModel.cs:487` [Medium] - (_isAdmin && _autoDownloadUpdatesIsGpoDisabled) ||
-- `test-todo-report.md:143` [Medium] - - `src/settings-ui/Settings.UI/ViewModels/GeneralViewModel.cs:515` [Medium] - public bool AutoDownloadUpdates
-- `test-todo-report.md:144` [Medium] - - `src/settings-ui/Settings.UI/ViewModels/GeneralViewModel.cs:519` [Medium] - return _autoDownloadUpdates && !_autoDownloadUpdatesIsGpoDisabled;
-- `test-todo-report.md:145` [Medium] - - `src/settings-ui/Settings.UI/ViewModels/GeneralViewModel.cs:524` [Medium] - if (_autoDownloadUpdates != value)
-- `test-todo-report.md:146` [Medium] - - `src/settings-ui/Settings.UI/ViewModels/GeneralViewModel.cs:526` [Medium] - _autoDownloadUpdates = value;
-- `test-todo-report.md:147` [Medium] - - `src/settings-ui/Settings.UI/ViewModels/GeneralViewModel.cs:527` [Medium] - GeneralSettingsConfig.AutoDownloadUpdates = value;
-- `test-todo-report.md:148` [Medium] - - `src/settings-ui/Settings.UI/ViewModels/GeneralViewModel.cs:533` [Medium] - public bool IsAutoDownloadUpdatesCardEnabled
-- `test-todo-report.md:149` [Medium] - - `src/settings-ui/Settings.UI/ViewModels/GeneralViewModel.cs:535` [Medium] - get => !_isDevBuild && !_autoDownloadUpdatesIsGpoDisabled;
-- `test-todo-report.md:153` [Medium] - - `src/settings-ui/Settings.UI/SettingsXAML/Views/KeyboardManagerPage.xaml.cs:46` [Medium] - // Todo: Handle duplicate events either by somehow suppress them or re-read the configuration every time since we will be updating the UI only if something is changed.
-- `test-todo-report.md:154` [Medium] - - `src/settings-ui/Settings.UI/SettingsXAML/Views/MouseWithoutBordersPage.xaml.cs:55` [Medium] - // Todo: Handle duplicate events either by somehow suppress them or re-read the configuration every time since we will be updating the UI only if something is changed.
-- `test-todo-report.md:291` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI.ViewModels/AppStateModel.cs:95` [Medium] - // TODO: Instead of just raising the event here, we should
-- `test-todo-report.md:292` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI.ViewModels/CommandItemViewModel.cs:141` [Medium] - // TODO: Do these need to go into FastInit?
-- `test-todo-report.md:293` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI.ViewModels/CommandItemViewModel.cs:201` [Medium] - // TODO this probably should just be a CommandContextItemViewModel(CommandItemViewModel) ctor, or a copy ctor or whatever
-- `test-todo-report.md:294` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI.ViewModels/Commands/MainListPage.cs:18` [Medium] - /// TODO: Need to think about how we structure/interop for the page -> section -> item between the main setup, the extensions, and our viewmodels.
-- `test-todo-report.md:295` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI.ViewModels/ContentPageViewModel.cs:55` [Medium] - // TODO: Does this need to hop to a _different_ thread, so that we don't block the extension while we're fetching?
-- `test-todo-report.md:296` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI.ViewModels/ContentTreeViewModel.cs:51` [Medium] - // TODO: Does this need to hop to a _different_ thread, so that we don't block the extension while we're fetching?
-- `test-todo-report.md:297` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI.ViewModels/ListItemViewModel.cs:98` [Medium] - // TODO: Do we want filters to match descriptions and other properties? Tags, etc... Yes?
-- `test-todo-report.md:298` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI.ViewModels/ListItemViewModel.cs:99` [Medium] - // TODO: Do we want to save off the score here so we can sort by it in our ListViewModel?
-- `test-todo-report.md:299` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI.ViewModels/ListViewModel.cs:21` [Medium] - // TODO: Do we want a base "ItemsPageViewModel" for anything that's going to have items?
-- `test-todo-report.md:300` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI.ViewModels/ListViewModel.cs:82` [Medium] - // TODO: Does this need to hop to a _different_ thread, so that we don't block the extension while we're fetching?
-- `test-todo-report.md:301` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI.ViewModels/ListViewModel.cs:173` [Medium] - // TODO: Iterate over everything in Items, and prune items from the
-- `test-todo-report.md:302` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI.ViewModels/ListViewModel.cs:178` [Medium] - // TODO: Move this within the for loop, so we can catch issues with individual items
-- `test-todo-report.md:303` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI.ViewModels/ListViewModel.cs:244` [Medium] - // TODO: GH #502
-- `test-todo-report.md:304` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI.ViewModels/PageViewModel.cs:104` [Medium] - // TODO: We may want a SemaphoreSlim lock here.
-- `test-todo-report.md:305` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI.ViewModels/PageViewModel.cs:124` [Medium] - // TODO: Do we want an event/signal here that the Page Views can listen to? (i.e. ListPage setting the selected index to 0, however, in async world the user may have already started navigating around page...)
-- `test-todo-report.md:306` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI.ViewModels/SettingsModel.cs:139` [Medium] - // TODO: Instead of just raising the event here, we should
-- `test-todo-report.md:307` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI.ViewModels/ShellViewModel.cs:58` [Medium] - // TODO: Handle failure case
-- `test-todo-report.md:308` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI.ViewModels/ShellViewModel.cs:93` [Medium] - // TODO: Handle failure case
-- `test-todo-report.md:309` [Low] - - `src/modules/cmdpal/Microsoft.CmdPal.UI.ViewModels/TopLevelCommandManager.cs:202` [Low] - // TODO In the future, we'll probably abstract some of this away, to have
-- `test-todo-report.md:310` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI/App.xaml.cs:91` [Medium] - // TODO: It's in the Labs feed, but we can use Sergio's AOT-friendly source generator for this: https://github.com/CommunityToolkit/Labs-Windows/discussions/463
-- `test-todo-report.md:311` [Low] - - `src/modules/cmdpal/Microsoft.CmdPal.UI/Controls/ContentFormControl.xaml.cs:52` [Low] - // TODO in the future, we should handle ActualThemeChanged and replace
-- `test-todo-report.md:312` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI/Controls/SearchBar.xaml.cs:46` [Medium] - //// TODO: If the Debounce timer hasn't fired, we may want to store the current Filter in the OldValue/prior VM, but we don't want that to go actually do work...
-- `test-todo-report.md:313` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI/Controls/SearchBar.xaml.cs:58` [Medium] - // TODO: In some cases we probably want commands to clear a filter
-- `test-todo-report.md:314` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI/Controls/SearchBar.xaml.cs:148` [Medium] - // hack TODO GH #245
-- `test-todo-report.md:315` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI/Controls/SearchBar.xaml.cs:159` [Medium] - // hack TODO GH #245
-- `test-todo-report.md:316` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI/Controls/SearchBar.xaml.cs:228` [Medium] - // TERRIBLE HACK TODO GH #245
-- `test-todo-report.md:317` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI/Controls/SearchBar.xaml.cs:243` [Medium] - // TODO: We could encapsulate this in a Behavior if we wanted to bind to the Filter property.
-- `test-todo-report.md:318` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI/ExtViews/ListPage.xaml:18` [Medium] - <!--  TODO: Figure out what we want to do here for filtering/grouping and where  -->
-- `test-todo-report.md:319` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI/Pages/LoadingPage.xaml.cs:39` [Medium] - // TODO: Handle failure case
-- `test-todo-report.md:320` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI/Pages/ShellPage.xaml.cs:126` [Medium] - // TODO: Actually loading up the page, or invoking the command -
-- `test-todo-report.md:321` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI/Pages/ShellPage.xaml.cs:182` [Medium] - // TODO GH #526 This needs more better locking too
-- `test-todo-report.md:322` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI/Pages/ShellPage.xaml.cs:224` [Medium] - // todo BODGY
-- `test-todo-report.md:323` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI/Pages/ShellPage.xaml.cs:249` [Medium] - // TODO GH #525 This needs more better locking.
-- `test-todo-report.md:324` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI/Pages/ShellPage.xaml.cs:313` [Medium] - // TODO: Maybe we need to style the primary button to be red?
-- `test-todo-report.md:325` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI/Pages/ShellPage.xaml.cs:437` [Medium] - // TERRIBLE HACK TODO GH #245
-- `test-todo-report.md:326` [Low] - - `src/modules/cmdpal/Microsoft.CmdPal.UI/Pages/ShellPage.xaml.cs:576` [Low] - // TODO: In the future we probably want a short cache (3-5?) of recent VMs in case the user re-navigates
-- `test-todo-report.md:357` [Medium] - - `src/modules/cmdpal/doc/initial-sdk-spec/initial-sdk-spec.md:1874` [Medium] - // TODO! Icon maybe? Work with design on this
-- `test-todo-report.md:358` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI.ViewModels/PageViewModel.cs:106` [Medium] - // TODO: We may want to investigate using some sort of AsyncEnumerable or populating these as they come into the UI layer
-- `test-todo-report.md:359` [Medium] - - `src/modules/cmdpal/Microsoft.Terminal.UI/Converters.cpp:69` [Medium] - // double Converters::FontWeightToDouble(const winrt::Windows::UI::Text::FontWeight fontWeight)
-- `test-todo-report.md:360` [Medium] - - `src/modules/cmdpal/Microsoft.Terminal.UI/Converters.h:30` [Medium] - // static double FontWeightToDouble(winrt::Windows::UI::Text::FontWeight fontWeight);
-- `test-todo-report.md:408` [Medium] - - `src/modules/FileLocksmith/FileLocksmithContextMenu/dllmain.cpp:144` [Medium] - // TODO Aggregate items and send to UI
-- `test-todo-report.md:409` [Medium] - - `src/modules/FileLocksmith/FileLocksmithExt/ExplorerCommand.cpp:217` [Medium] - // TODO Aggregate items and send to UI
-- `test-todo-report.md:428` [Medium] - - `src/modules/imageresizer/ui/App.xaml:19` [Medium] - <v:AutoDoubleConverter x:Key="AutoDoubleConverter" />
-- `test-todo-report.md:429` [Medium] - - `src/modules/imageresizer/ui/Models/ResizeBatch.cs:93` [Medium] - // TODO: If we ever switch to Windows.Graphics.Imaging, we can get a lot more throughput by using the async
-- `test-todo-report.md:430` [Medium] - - `src/modules/imageresizer/ui/Views/AutoDoubleConverter.cs:21` [Medium] - internal class AutoDoubleConverter : IValueConverter
-- `test-todo-report.md:431` [Medium] - - `src/modules/imageresizer/ui/Views/InputPage.xaml:49` [Medium] - Text="{Binding Width, Converter={StaticResource AutoDoubleConverter}, ConverterParameter=Auto}" />
-- `test-todo-report.md:432` [Medium] - - `src/modules/imageresizer/ui/Views/InputPage.xaml:58` [Medium] - Text="{Binding Height, Converter={StaticResource AutoDoubleConverter}, ConverterParameter=Auto}"
-- `test-todo-report.md:433` [Medium] - - `src/modules/imageresizer/ui/Views/SizeTypeToHelpTextConverter.cs:33` [Medium] - _autoDoubleConverter.Convert(value, typeof(string), null, culture) as string;
-- `test-todo-report.md:444` [Medium] - - `src/modules/keyboardmanager/KeyboardManagerEditorLibrary/SingleKeyRemapControl.cpp:132` [Medium] - void SingleKeyRemapControl::TextToMapChangedHandler(winrt::Windows::Foundation::IInspectable const& sender, winrt::Windows::UI::Xaml::Controls::TextChangedEventArgs const& e) // TODO: remove
-- `test-todo-report.md:474` [Medium] - - `src/modules/launcher/Wox.Infrastructure/Storage/ISavable.cs:9` [Medium] - /// todo should be merged into a abstract class instead of separate interface
-- `test-todo-report.md:528` [Medium] - - `src/modules/MouseWithoutBorders/App/Class/MachinePool.cs:129` [Medium] - // TODO: would probably be cleaner interface as IEnumerable
-- `test-todo-report.md:549` [Medium] - - `src/modules/peek/Peek.UI/PeekXAML/MainWindow.xaml.cs:226` [Medium] - // TODO: Investigate why portrait images do not perfectly fit edge-to-edge --> WindowHeightContentPadding can be 0 (or close to that) if custom? [Jay]
-- `test-todo-report.md:963` [Medium] - - `todo-report.md:9` [Medium] - - **Core: settings-ui**: 38 TODOs
-- `test-todo-report.md:964` [Medium] - - `todo-report.md:43` [Medium] - - **UI/UX**: 11 TODOs
-- `test-todo-report.md:965` [Medium] - - `todo-report.md:113` [Medium] - #### Core: settings-ui (38 TODOs)
-- `test-todo-report.md:966` [Medium] - - `todo-report.md:126` [Medium] - - `src/settings-ui/Settings.UI.Library/GeneralSettings.cs:71` [Medium] - public bool AutoDownloadUpdates { get; set; }
-- `test-todo-report.md:967` [Medium] - - `todo-report.md:127` [Medium] - - `src/settings-ui/Settings.UI.Library/GeneralSettings.cs:87` [Medium] - AutoDownloadUpdates = false;
-- `test-todo-report.md:968` [Medium] - - `todo-report.md:128` [Medium] - - `src/settings-ui/Settings.UI.Library/UpdatingSettings.cs:20` [Medium] - ReadyToDownload,
-- `test-todo-report.md:969` [Medium] - - `todo-report.md:129` [Medium] - - `src/settings-ui/Settings.UI.UnitTests/Cmd/SetSettingCommandTests.cs:58` [Medium] - [DataRow(typeof(GeneralSettings), nameof(GeneralSettings.AutoDownloadUpdates), "true")]
-- `test-todo-report.md:970` [Medium] - - `todo-report.md:130` [Medium] - - `src/settings-ui/Settings.UI.UnitTests/ViewModelTests/General.cs:64` [Medium] - Assert.AreEqual(originalGeneralSettings.AutoDownloadUpdates, viewModel.AutoDownloadUpdates);
-- `test-todo-report.md:971` [Medium] - - `todo-report.md:131` [Medium] - - `src/settings-ui/Settings.UI/SettingsXAML/Controls/AlphaColorPickerButton.xaml:12` [Medium] - <!--TODO(stefan): ToDisplayName is no longer available in ColorHelper
-- `test-todo-report.md:972` [Medium] - - `todo-report.md:132` [Medium] - - `src/settings-ui/Settings.UI/SettingsXAML/Controls/ColorPickerButton.xaml:12` [Medium] - <!--TODO(stefan): ToDisplayName is no longer available in ColorHelper
-- `test-todo-report.md:973` [Medium] - - `todo-report.md:133` [Medium] - - `src/settings-ui/Settings.UI/SettingsXAML/OOBE/Views/OobeAdvancedPaste.xaml.cs:42` [Medium] - // TODO(stefan): Check how to remove additional space if item is set to Collapsed.
-- `test-todo-report.md:974` [Medium] - - `todo-report.md:134` [Medium] - - `src/settings-ui/Settings.UI/SettingsXAML/Views/AwakePage.xaml.cs:71` [Medium] - /// TODO: The logic here needs to be optimized since doing string comparison on values is not ideal.
-- `test-todo-report.md:975` [Medium] - - `todo-report.md:135` [Medium] - - `src/settings-ui/Settings.UI/SettingsXAML/Views/GeneralPage.xaml:75` [Medium] - IsEnabled="{x:Bind Mode=OneWay, Path=ViewModel.IsAutoDownloadUpdatesCardEnabled}"
-- `test-todo-report.md:976` [Medium] - - `todo-report.md:136` [Medium] - - `src/settings-ui/Settings.UI/SettingsXAML/Views/GeneralPage.xaml:77` [Medium] - <controls:CheckBoxWithDescriptionControl x:Uid="GeneralPage_AutoDownloadAndInstallUpdates" IsChecked="{Binding Mode=TwoWay, Path=AutoDownloadUpdates}" />
-- `test-todo-report.md:977` [Medium] - - `todo-report.md:137` [Medium] - - `src/settings-ui/Settings.UI/SettingsXAML/Views/GeneralPage.xaml:108` [Medium] - IsOpen="{x:Bind ViewModel.PowerToysUpdatingState, Mode=OneWay, Converter={StaticResource UpdateStateToBoolConverter}, ConverterParameter=ReadyToDownload}"
-- `test-todo-report.md:978` [Medium] - - `todo-report.md:138` [Medium] - - `src/settings-ui/Settings.UI/SettingsXAML/Views/GeneralPage.xaml:109` [Medium] - IsTabStop="{x:Bind ViewModel.PowerToysUpdatingState, Mode=OneWay, Converter={StaticResource UpdateStateToBoolConverter}, ConverterParameter=ReadyToDownload}"
-- `test-todo-report.md:979` [Medium] - - `todo-report.md:139` [Medium] - - `src/settings-ui/Settings.UI/SettingsXAML/Views/GeneralPage.xaml:172` [Medium] - x:Uid="General_FailedToDownloadTheNewVersion"
-- `test-todo-report.md:980` [Medium] - - `todo-report.md:140` [Medium] - - `src/settings-ui/Settings.UI/SettingsXAML/Views/GeneralPage.xaml:181` [Medium] - x:Uid="General_TryAgainToDownloadAndInstall"
-- `test-todo-report.md:981` [Medium] - - `todo-report.md:141` [Medium] - - `src/settings-ui/Settings.UI/SettingsXAML/Views/GeneralPage.xaml.cs:144` [Medium] - // TODO: go back PickSingleFolderAsync when it's fixed
-- `test-todo-report.md:982` [Medium] - - `todo-report.md:142` [Medium] - - `src/settings-ui/Settings.UI/SettingsXAML/Views/MouseWithoutBordersPage.xaml:120` [Medium] - <!--  TODO: colors?  -->
-- `test-todo-report.md:983` [Medium] - - `todo-report.md:143` [Medium] - - `src/settings-ui/Settings.UI/SettingsXAML/Views/PowerLauncherPage.xaml:624` [Medium] - <!-- todo(Stefan): InfoBadge not available
-- `test-todo-report.md:984` [Medium] - - `todo-report.md:144` [Medium] - - `src/settings-ui/Settings.UI/SettingsXAML/Views/ZoomItPage.xaml.cs:77` [Medium] - // TODO: chooseFont.lpTemplateName = FORMATDLGORD31; and CHOOSE_FONT_FLAGS.CF_ENABLETEMPLATE
-- `test-todo-report.md:985` [Medium] - - `todo-report.md:145` [Medium] - - `src/settings-ui/Settings.UI/ViewModels/DashboardViewModel.cs:67` [Medium] - UpdateAvailable = updatingSettingsConfig != null && (updatingSettingsConfig.State == UpdatingSettings.UpdatingState.ReadyToInstall || updatingSettingsConfig.State == UpdatingSettings.UpdatingState.ReadyToDownload);
-- `test-todo-report.md:986` [Medium] - - `todo-report.md:146` [Medium] - - `src/settings-ui/Settings.UI/ViewModels/Flyout/LauncherViewModel.cs:60` [Medium] - if (updatingSettingsConfig.State == UpdatingSettings.UpdatingState.ReadyToInstall || updatingSettingsConfig.State == UpdatingSettings.UpdatingState.ReadyToDownload)
-- `test-todo-report.md:987` [Medium] - - `todo-report.md:147` [Medium] - - `src/settings-ui/Settings.UI/ViewModels/GeneralViewModel.cs:151` [Medium] - _autoDownloadUpdates = GeneralSettingsConfig.AutoDownloadUpdates;
-- `test-todo-report.md:988` [Medium] - - `todo-report.md:148` [Medium] - - `src/settings-ui/Settings.UI/ViewModels/GeneralViewModel.cs:170` [Medium] - _autoDownloadUpdatesIsGpoDisabled = GPOWrapper.GetDisableAutomaticUpdateDownloadValue() == GpoRuleConfigured.Enabled;
-- `test-todo-report.md:989` [Medium] - - `todo-report.md:149` [Medium] - - `src/settings-ui/Settings.UI/ViewModels/GeneralViewModel.cs:243` [Medium] - private bool _autoDownloadUpdates;
-- `test-todo-report.md:990` [Medium] - - `todo-report.md:150` [Medium] - - `src/settings-ui/Settings.UI/ViewModels/GeneralViewModel.cs:244` [Medium] - private bool _autoDownloadUpdatesIsGpoDisabled;
-- `test-todo-report.md:991` [Medium] - - `todo-report.md:151` [Medium] - - `src/settings-ui/Settings.UI/ViewModels/GeneralViewModel.cs:487` [Medium] - (_isAdmin && _autoDownloadUpdatesIsGpoDisabled) ||
-- `test-todo-report.md:992` [Medium] - - `todo-report.md:152` [Medium] - - `src/settings-ui/Settings.UI/ViewModels/GeneralViewModel.cs:515` [Medium] - public bool AutoDownloadUpdates
-- `test-todo-report.md:993` [Medium] - - `todo-report.md:153` [Medium] - - `src/settings-ui/Settings.UI/ViewModels/GeneralViewModel.cs:519` [Medium] - return _autoDownloadUpdates && !_autoDownloadUpdatesIsGpoDisabled;
-- `test-todo-report.md:994` [Medium] - - `todo-report.md:154` [Medium] - - `src/settings-ui/Settings.UI/ViewModels/GeneralViewModel.cs:524` [Medium] - if (_autoDownloadUpdates != value)
-- `test-todo-report.md:995` [Medium] - - `todo-report.md:155` [Medium] - - `src/settings-ui/Settings.UI/ViewModels/GeneralViewModel.cs:526` [Medium] - _autoDownloadUpdates = value;
-- `test-todo-report.md:996` [Medium] - - `todo-report.md:156` [Medium] - - `src/settings-ui/Settings.UI/ViewModels/GeneralViewModel.cs:527` [Medium] - GeneralSettingsConfig.AutoDownloadUpdates = value;
-- `test-todo-report.md:997` [Medium] - - `todo-report.md:157` [Medium] - - `src/settings-ui/Settings.UI/ViewModels/GeneralViewModel.cs:533` [Medium] - public bool IsAutoDownloadUpdatesCardEnabled
-- `test-todo-report.md:998` [Medium] - - `todo-report.md:158` [Medium] - - `src/settings-ui/Settings.UI/ViewModels/GeneralViewModel.cs:535` [Medium] - get => !_isDevBuild && !_autoDownloadUpdatesIsGpoDisabled;
-- `test-todo-report.md:999` [Medium] - - `todo-report.md:162` [Medium] - - `src/settings-ui/Settings.UI/SettingsXAML/Views/KeyboardManagerPage.xaml.cs:46` [Medium] - // Todo: Handle duplicate events either by somehow suppress them or re-read the configuration every time since we will be updating the UI only if something is changed.
-- `test-todo-report.md:1000` [Medium] - - `todo-report.md:163` [Medium] - - `src/settings-ui/Settings.UI/SettingsXAML/Views/MouseWithoutBordersPage.xaml.cs:55` [Medium] - // Todo: Handle duplicate events either by somehow suppress them or re-read the configuration every time since we will be updating the UI only if something is changed.
-- `test-todo-report.md:1001` [Medium] - - `todo-report.md:300` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI.ViewModels/AppStateModel.cs:95` [Medium] - // TODO: Instead of just raising the event here, we should
-- `test-todo-report.md:1002` [Medium] - - `todo-report.md:301` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI.ViewModels/CommandItemViewModel.cs:141` [Medium] - // TODO: Do these need to go into FastInit?
-- `test-todo-report.md:1003` [Medium] - - `todo-report.md:302` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI.ViewModels/CommandItemViewModel.cs:201` [Medium] - // TODO this probably should just be a CommandContextItemViewModel(CommandItemViewModel) ctor, or a copy ctor or whatever
-- `test-todo-report.md:1004` [Medium] - - `todo-report.md:303` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI.ViewModels/Commands/MainListPage.cs:18` [Medium] - /// TODO: Need to think about how we structure/interop for the page -> section -> item between the main setup, the extensions, and our viewmodels.
-- `test-todo-report.md:1005` [Medium] - - `todo-report.md:304` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI.ViewModels/ContentPageViewModel.cs:55` [Medium] - // TODO: Does this need to hop to a _different_ thread, so that we don't block the extension while we're fetching?
-- `test-todo-report.md:1006` [Medium] - - `todo-report.md:305` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI.ViewModels/ContentTreeViewModel.cs:51` [Medium] - // TODO: Does this need to hop to a _different_ thread, so that we don't block the extension while we're fetching?
-- `test-todo-report.md:1007` [Medium] - - `todo-report.md:306` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI.ViewModels/ListItemViewModel.cs:98` [Medium] - // TODO: Do we want filters to match descriptions and other properties? Tags, etc... Yes?
-- `test-todo-report.md:1008` [Medium] - - `todo-report.md:307` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI.ViewModels/ListItemViewModel.cs:99` [Medium] - // TODO: Do we want to save off the score here so we can sort by it in our ListViewModel?
-- `test-todo-report.md:1009` [Medium] - - `todo-report.md:308` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI.ViewModels/ListViewModel.cs:21` [Medium] - // TODO: Do we want a base "ItemsPageViewModel" for anything that's going to have items?
-- `test-todo-report.md:1010` [Medium] - - `todo-report.md:309` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI.ViewModels/ListViewModel.cs:82` [Medium] - // TODO: Does this need to hop to a _different_ thread, so that we don't block the extension while we're fetching?
-- `test-todo-report.md:1011` [Medium] - - `todo-report.md:310` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI.ViewModels/ListViewModel.cs:173` [Medium] - // TODO: Iterate over everything in Items, and prune items from the
-- `test-todo-report.md:1012` [Medium] - - `todo-report.md:311` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI.ViewModels/ListViewModel.cs:178` [Medium] - // TODO: Move this within the for loop, so we can catch issues with individual items
-- `test-todo-report.md:1013` [Medium] - - `todo-report.md:312` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI.ViewModels/ListViewModel.cs:244` [Medium] - // TODO: GH #502
-- `test-todo-report.md:1014` [Medium] - - `todo-report.md:313` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI.ViewModels/PageViewModel.cs:104` [Medium] - // TODO: We may want a SemaphoreSlim lock here.
-- `test-todo-report.md:1015` [Medium] - - `todo-report.md:314` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI.ViewModels/PageViewModel.cs:124` [Medium] - // TODO: Do we want an event/signal here that the Page Views can listen to? (i.e. ListPage setting the selected index to 0, however, in async world the user may have already started navigating around page...)
-- `test-todo-report.md:1016` [Medium] - - `todo-report.md:315` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI.ViewModels/SettingsModel.cs:139` [Medium] - // TODO: Instead of just raising the event here, we should
-- `test-todo-report.md:1017` [Medium] - - `todo-report.md:316` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI.ViewModels/ShellViewModel.cs:58` [Medium] - // TODO: Handle failure case
-- `test-todo-report.md:1018` [Medium] - - `todo-report.md:317` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI.ViewModels/ShellViewModel.cs:93` [Medium] - // TODO: Handle failure case
-- `test-todo-report.md:1019` [Low] - - `todo-report.md:318` [Low] - - `src/modules/cmdpal/Microsoft.CmdPal.UI.ViewModels/TopLevelCommandManager.cs:202` [Low] - // TODO In the future, we'll probably abstract some of this away, to have
-- `test-todo-report.md:1020` [Medium] - - `todo-report.md:319` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI/App.xaml.cs:91` [Medium] - // TODO: It's in the Labs feed, but we can use Sergio's AOT-friendly source generator for this: https://github.com/CommunityToolkit/Labs-Windows/discussions/463
-- `test-todo-report.md:1021` [Low] - - `todo-report.md:320` [Low] - - `src/modules/cmdpal/Microsoft.CmdPal.UI/Controls/ContentFormControl.xaml.cs:52` [Low] - // TODO in the future, we should handle ActualThemeChanged and replace
-- `test-todo-report.md:1022` [Medium] - - `todo-report.md:321` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI/Controls/SearchBar.xaml.cs:46` [Medium] - //// TODO: If the Debounce timer hasn't fired, we may want to store the current Filter in the OldValue/prior VM, but we don't want that to go actually do work...
-- `test-todo-report.md:1023` [Medium] - - `todo-report.md:322` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI/Controls/SearchBar.xaml.cs:58` [Medium] - // TODO: In some cases we probably want commands to clear a filter
-- `test-todo-report.md:1024` [Medium] - - `todo-report.md:323` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI/Controls/SearchBar.xaml.cs:148` [Medium] - // hack TODO GH #245
-- `test-todo-report.md:1025` [Medium] - - `todo-report.md:324` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI/Controls/SearchBar.xaml.cs:159` [Medium] - // hack TODO GH #245
-- `test-todo-report.md:1026` [Medium] - - `todo-report.md:325` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI/Controls/SearchBar.xaml.cs:228` [Medium] - // TERRIBLE HACK TODO GH #245
-- `test-todo-report.md:1027` [Medium] - - `todo-report.md:326` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI/Controls/SearchBar.xaml.cs:243` [Medium] - // TODO: We could encapsulate this in a Behavior if we wanted to bind to the Filter property.
-- `test-todo-report.md:1028` [Medium] - - `todo-report.md:327` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI/ExtViews/ListPage.xaml:18` [Medium] - <!--  TODO: Figure out what we want to do here for filtering/grouping and where  -->
-- `test-todo-report.md:1029` [Medium] - - `todo-report.md:328` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI/Pages/LoadingPage.xaml.cs:39` [Medium] - // TODO: Handle failure case
-- `test-todo-report.md:1030` [Medium] - - `todo-report.md:329` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI/Pages/ShellPage.xaml.cs:126` [Medium] - // TODO: Actually loading up the page, or invoking the command -
-- `test-todo-report.md:1031` [Medium] - - `todo-report.md:330` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI/Pages/ShellPage.xaml.cs:182` [Medium] - // TODO GH #526 This needs more better locking too
-- `test-todo-report.md:1032` [Medium] - - `todo-report.md:331` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI/Pages/ShellPage.xaml.cs:224` [Medium] - // todo BODGY
-- `test-todo-report.md:1033` [Medium] - - `todo-report.md:332` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI/Pages/ShellPage.xaml.cs:249` [Medium] - // TODO GH #525 This needs more better locking.
-- `test-todo-report.md:1034` [Medium] - - `todo-report.md:333` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI/Pages/ShellPage.xaml.cs:313` [Medium] - // TODO: Maybe we need to style the primary button to be red?
-- `test-todo-report.md:1035` [Medium] - - `todo-report.md:334` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI/Pages/ShellPage.xaml.cs:437` [Medium] - // TERRIBLE HACK TODO GH #245
-- `test-todo-report.md:1036` [Low] - - `todo-report.md:335` [Low] - - `src/modules/cmdpal/Microsoft.CmdPal.UI/Pages/ShellPage.xaml.cs:576` [Low] - // TODO: In the future we probably want a short cache (3-5?) of recent VMs in case the user re-navigates
-- `test-todo-report.md:1037` [Medium] - - `todo-report.md:366` [Medium] - - `src/modules/cmdpal/doc/initial-sdk-spec/initial-sdk-spec.md:1874` [Medium] - // TODO! Icon maybe? Work with design on this
-- `test-todo-report.md:1038` [Medium] - - `todo-report.md:367` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI.ViewModels/PageViewModel.cs:106` [Medium] - // TODO: We may want to investigate using some sort of AsyncEnumerable or populating these as they come into the UI layer
-- `test-todo-report.md:1039` [Medium] - - `todo-report.md:368` [Medium] - - `src/modules/cmdpal/Microsoft.Terminal.UI/Converters.cpp:69` [Medium] - // double Converters::FontWeightToDouble(const winrt::Windows::UI::Text::FontWeight fontWeight)
-- `test-todo-report.md:1040` [Medium] - - `todo-report.md:369` [Medium] - - `src/modules/cmdpal/Microsoft.Terminal.UI/Converters.h:30` [Medium] - // static double FontWeightToDouble(winrt::Windows::UI::Text::FontWeight fontWeight);
-- `test-todo-report.md:1041` [Medium] - - `todo-report.md:417` [Medium] - - `src/modules/FileLocksmith/FileLocksmithContextMenu/dllmain.cpp:144` [Medium] - // TODO Aggregate items and send to UI
-- `test-todo-report.md:1042` [Medium] - - `todo-report.md:418` [Medium] - - `src/modules/FileLocksmith/FileLocksmithExt/ExplorerCommand.cpp:217` [Medium] - // TODO Aggregate items and send to UI
-- `test-todo-report.md:1043` [Medium] - - `todo-report.md:437` [Medium] - - `src/modules/imageresizer/ui/App.xaml:19` [Medium] - <v:AutoDoubleConverter x:Key="AutoDoubleConverter" />
-- `test-todo-report.md:1044` [Medium] - - `todo-report.md:438` [Medium] - - `src/modules/imageresizer/ui/Models/ResizeBatch.cs:93` [Medium] - // TODO: If we ever switch to Windows.Graphics.Imaging, we can get a lot more throughput by using the async
-- `test-todo-report.md:1045` [Medium] - - `todo-report.md:439` [Medium] - - `src/modules/imageresizer/ui/Views/AutoDoubleConverter.cs:21` [Medium] - internal class AutoDoubleConverter : IValueConverter
-- `test-todo-report.md:1046` [Medium] - - `todo-report.md:440` [Medium] - - `src/modules/imageresizer/ui/Views/InputPage.xaml:49` [Medium] - Text="{Binding Width, Converter={StaticResource AutoDoubleConverter}, ConverterParameter=Auto}" />
-- `test-todo-report.md:1047` [Medium] - - `todo-report.md:441` [Medium] - - `src/modules/imageresizer/ui/Views/InputPage.xaml:58` [Medium] - Text="{Binding Height, Converter={StaticResource AutoDoubleConverter}, ConverterParameter=Auto}"
-- `test-todo-report.md:1048` [Medium] - - `todo-report.md:442` [Medium] - - `src/modules/imageresizer/ui/Views/SizeTypeToHelpTextConverter.cs:33` [Medium] - _autoDoubleConverter.Convert(value, typeof(string), null, culture) as string;
-- `test-todo-report.md:1049` [Medium] - - `todo-report.md:453` [Medium] - - `src/modules/keyboardmanager/KeyboardManagerEditorLibrary/SingleKeyRemapControl.cpp:132` [Medium] - void SingleKeyRemapControl::TextToMapChangedHandler(winrt::Windows::Foundation::IInspectable const& sender, winrt::Windows::UI::Xaml::Controls::TextChangedEventArgs const& e) // TODO: remove
-- `test-todo-report.md:1050` [Medium] - - `todo-report.md:483` [Medium] - - `src/modules/launcher/Wox.Infrastructure/Storage/ISavable.cs:9` [Medium] - /// todo should be merged into a abstract class instead of separate interface
-- `test-todo-report.md:1051` [Medium] - - `todo-report.md:537` [Medium] - - `src/modules/MouseWithoutBorders/App/Class/MachinePool.cs:129` [Medium] - // TODO: would probably be cleaner interface as IEnumerable
-- `test-todo-report.md:1052` [Medium] - - `todo-report.md:558` [Medium] - - `src/modules/peek/Peek.UI/PeekXAML/MainWindow.xaml.cs:226` [Medium] - // TODO: Investigate why portrait images do not perfectly fit edge-to-edge --> WindowHeightContentPadding can be 0 (or close to that) if custom? [Jay]
-- `test-todo-report.md:1146` [Medium] - - `tools/build/collect-todos.ps1:83` [Medium] - } elseif ($TodoText -match "(?i)\b(ui|ux|interface|design|layout)\b") {
-- `todo-report.md:9` [Medium] - - **Core: settings-ui**: 38 TODOs
-- `todo-report.md:43` [Medium] - - **UI/UX**: 11 TODOs
-- `todo-report.md:113` [Medium] - #### Core: settings-ui (38 TODOs)
-- `todo-report.md:126` [Medium] - - `src/settings-ui/Settings.UI.Library/GeneralSettings.cs:71` [Medium] - public bool AutoDownloadUpdates { get; set; }
-- `todo-report.md:127` [Medium] - - `src/settings-ui/Settings.UI.Library/GeneralSettings.cs:87` [Medium] - AutoDownloadUpdates = false;
-- `todo-report.md:128` [Medium] - - `src/settings-ui/Settings.UI.Library/UpdatingSettings.cs:20` [Medium] - ReadyToDownload,
-- `todo-report.md:129` [Medium] - - `src/settings-ui/Settings.UI.UnitTests/Cmd/SetSettingCommandTests.cs:58` [Medium] - [DataRow(typeof(GeneralSettings), nameof(GeneralSettings.AutoDownloadUpdates), "true")]
-- `todo-report.md:130` [Medium] - - `src/settings-ui/Settings.UI.UnitTests/ViewModelTests/General.cs:64` [Medium] - Assert.AreEqual(originalGeneralSettings.AutoDownloadUpdates, viewModel.AutoDownloadUpdates);
-- `todo-report.md:131` [Medium] - - `src/settings-ui/Settings.UI/SettingsXAML/Controls/AlphaColorPickerButton.xaml:12` [Medium] - <!--TODO(stefan): ToDisplayName is no longer available in ColorHelper
-- `todo-report.md:132` [Medium] - - `src/settings-ui/Settings.UI/SettingsXAML/Controls/ColorPickerButton.xaml:12` [Medium] - <!--TODO(stefan): ToDisplayName is no longer available in ColorHelper
-- `todo-report.md:133` [Medium] - - `src/settings-ui/Settings.UI/SettingsXAML/OOBE/Views/OobeAdvancedPaste.xaml.cs:42` [Medium] - // TODO(stefan): Check how to remove additional space if item is set to Collapsed.
-- `todo-report.md:134` [Medium] - - `src/settings-ui/Settings.UI/SettingsXAML/Views/AwakePage.xaml.cs:71` [Medium] - /// TODO: The logic here needs to be optimized since doing string comparison on values is not ideal.
-- `todo-report.md:135` [Medium] - - `src/settings-ui/Settings.UI/SettingsXAML/Views/GeneralPage.xaml:75` [Medium] - IsEnabled="{x:Bind Mode=OneWay, Path=ViewModel.IsAutoDownloadUpdatesCardEnabled}"
-- `todo-report.md:136` [Medium] - - `src/settings-ui/Settings.UI/SettingsXAML/Views/GeneralPage.xaml:77` [Medium] - <controls:CheckBoxWithDescriptionControl x:Uid="GeneralPage_AutoDownloadAndInstallUpdates" IsChecked="{Binding Mode=TwoWay, Path=AutoDownloadUpdates}" />
-- `todo-report.md:137` [Medium] - - `src/settings-ui/Settings.UI/SettingsXAML/Views/GeneralPage.xaml:108` [Medium] - IsOpen="{x:Bind ViewModel.PowerToysUpdatingState, Mode=OneWay, Converter={StaticResource UpdateStateToBoolConverter}, ConverterParameter=ReadyToDownload}"
-- `todo-report.md:138` [Medium] - - `src/settings-ui/Settings.UI/SettingsXAML/Views/GeneralPage.xaml:109` [Medium] - IsTabStop="{x:Bind ViewModel.PowerToysUpdatingState, Mode=OneWay, Converter={StaticResource UpdateStateToBoolConverter}, ConverterParameter=ReadyToDownload}"
-- `todo-report.md:139` [Medium] - - `src/settings-ui/Settings.UI/SettingsXAML/Views/GeneralPage.xaml:172` [Medium] - x:Uid="General_FailedToDownloadTheNewVersion"
-- `todo-report.md:140` [Medium] - - `src/settings-ui/Settings.UI/SettingsXAML/Views/GeneralPage.xaml:181` [Medium] - x:Uid="General_TryAgainToDownloadAndInstall"
-- `todo-report.md:141` [Medium] - - `src/settings-ui/Settings.UI/SettingsXAML/Views/GeneralPage.xaml.cs:144` [Medium] - // TODO: go back PickSingleFolderAsync when it's fixed
-- `todo-report.md:142` [Medium] - - `src/settings-ui/Settings.UI/SettingsXAML/Views/MouseWithoutBordersPage.xaml:120` [Medium] - <!--  TODO: colors?  -->
-- `todo-report.md:143` [Medium] - - `src/settings-ui/Settings.UI/SettingsXAML/Views/PowerLauncherPage.xaml:624` [Medium] - <!-- todo(Stefan): InfoBadge not available
-- `todo-report.md:144` [Medium] - - `src/settings-ui/Settings.UI/SettingsXAML/Views/ZoomItPage.xaml.cs:77` [Medium] - // TODO: chooseFont.lpTemplateName = FORMATDLGORD31; and CHOOSE_FONT_FLAGS.CF_ENABLETEMPLATE
-- `todo-report.md:145` [Medium] - - `src/settings-ui/Settings.UI/ViewModels/DashboardViewModel.cs:67` [Medium] - UpdateAvailable = updatingSettingsConfig != null && (updatingSettingsConfig.State == UpdatingSettings.UpdatingState.ReadyToInstall || updatingSettingsConfig.State == UpdatingSettings.UpdatingState.ReadyToDownload);
-- `todo-report.md:146` [Medium] - - `src/settings-ui/Settings.UI/ViewModels/Flyout/LauncherViewModel.cs:60` [Medium] - if (updatingSettingsConfig.State == UpdatingSettings.UpdatingState.ReadyToInstall || updatingSettingsConfig.State == UpdatingSettings.UpdatingState.ReadyToDownload)
-- `todo-report.md:147` [Medium] - - `src/settings-ui/Settings.UI/ViewModels/GeneralViewModel.cs:151` [Medium] - _autoDownloadUpdates = GeneralSettingsConfig.AutoDownloadUpdates;
-- `todo-report.md:148` [Medium] - - `src/settings-ui/Settings.UI/ViewModels/GeneralViewModel.cs:170` [Medium] - _autoDownloadUpdatesIsGpoDisabled = GPOWrapper.GetDisableAutomaticUpdateDownloadValue() == GpoRuleConfigured.Enabled;
-- `todo-report.md:149` [Medium] - - `src/settings-ui/Settings.UI/ViewModels/GeneralViewModel.cs:243` [Medium] - private bool _autoDownloadUpdates;
-- `todo-report.md:150` [Medium] - - `src/settings-ui/Settings.UI/ViewModels/GeneralViewModel.cs:244` [Medium] - private bool _autoDownloadUpdatesIsGpoDisabled;
-- `todo-report.md:151` [Medium] - - `src/settings-ui/Settings.UI/ViewModels/GeneralViewModel.cs:487` [Medium] - (_isAdmin && _autoDownloadUpdatesIsGpoDisabled) ||
-- `todo-report.md:152` [Medium] - - `src/settings-ui/Settings.UI/ViewModels/GeneralViewModel.cs:515` [Medium] - public bool AutoDownloadUpdates
-- `todo-report.md:153` [Medium] - - `src/settings-ui/Settings.UI/ViewModels/GeneralViewModel.cs:519` [Medium] - return _autoDownloadUpdates && !_autoDownloadUpdatesIsGpoDisabled;
-- `todo-report.md:154` [Medium] - - `src/settings-ui/Settings.UI/ViewModels/GeneralViewModel.cs:524` [Medium] - if (_autoDownloadUpdates != value)
-- `todo-report.md:155` [Medium] - - `src/settings-ui/Settings.UI/ViewModels/GeneralViewModel.cs:526` [Medium] - _autoDownloadUpdates = value;
-- `todo-report.md:156` [Medium] - - `src/settings-ui/Settings.UI/ViewModels/GeneralViewModel.cs:527` [Medium] - GeneralSettingsConfig.AutoDownloadUpdates = value;
-- `todo-report.md:157` [Medium] - - `src/settings-ui/Settings.UI/ViewModels/GeneralViewModel.cs:533` [Medium] - public bool IsAutoDownloadUpdatesCardEnabled
-- `todo-report.md:158` [Medium] - - `src/settings-ui/Settings.UI/ViewModels/GeneralViewModel.cs:535` [Medium] - get => !_isDevBuild && !_autoDownloadUpdatesIsGpoDisabled;
-- `todo-report.md:162` [Medium] - - `src/settings-ui/Settings.UI/SettingsXAML/Views/KeyboardManagerPage.xaml.cs:46` [Medium] - // Todo: Handle duplicate events either by somehow suppress them or re-read the configuration every time since we will be updating the UI only if something is changed.
-- `todo-report.md:163` [Medium] - - `src/settings-ui/Settings.UI/SettingsXAML/Views/MouseWithoutBordersPage.xaml.cs:55` [Medium] - // Todo: Handle duplicate events either by somehow suppress them or re-read the configuration every time since we will be updating the UI only if something is changed.
-- `todo-report.md:300` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI.ViewModels/AppStateModel.cs:95` [Medium] - // TODO: Instead of just raising the event here, we should
-- `todo-report.md:301` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI.ViewModels/CommandItemViewModel.cs:141` [Medium] - // TODO: Do these need to go into FastInit?
-- `todo-report.md:302` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI.ViewModels/CommandItemViewModel.cs:201` [Medium] - // TODO this probably should just be a CommandContextItemViewModel(CommandItemViewModel) ctor, or a copy ctor or whatever
-- `todo-report.md:303` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI.ViewModels/Commands/MainListPage.cs:18` [Medium] - /// TODO: Need to think about how we structure/interop for the page -> section -> item between the main setup, the extensions, and our viewmodels.
-- `todo-report.md:304` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI.ViewModels/ContentPageViewModel.cs:55` [Medium] - // TODO: Does this need to hop to a _different_ thread, so that we don't block the extension while we're fetching?
-- `todo-report.md:305` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI.ViewModels/ContentTreeViewModel.cs:51` [Medium] - // TODO: Does this need to hop to a _different_ thread, so that we don't block the extension while we're fetching?
-- `todo-report.md:306` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI.ViewModels/ListItemViewModel.cs:98` [Medium] - // TODO: Do we want filters to match descriptions and other properties? Tags, etc... Yes?
-- `todo-report.md:307` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI.ViewModels/ListItemViewModel.cs:99` [Medium] - // TODO: Do we want to save off the score here so we can sort by it in our ListViewModel?
-- `todo-report.md:308` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI.ViewModels/ListViewModel.cs:21` [Medium] - // TODO: Do we want a base "ItemsPageViewModel" for anything that's going to have items?
-- `todo-report.md:309` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI.ViewModels/ListViewModel.cs:82` [Medium] - // TODO: Does this need to hop to a _different_ thread, so that we don't block the extension while we're fetching?
-- `todo-report.md:310` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI.ViewModels/ListViewModel.cs:173` [Medium] - // TODO: Iterate over everything in Items, and prune items from the
-- `todo-report.md:311` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI.ViewModels/ListViewModel.cs:178` [Medium] - // TODO: Move this within the for loop, so we can catch issues with individual items
-- `todo-report.md:312` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI.ViewModels/ListViewModel.cs:244` [Medium] - // TODO: GH #502
-- `todo-report.md:313` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI.ViewModels/PageViewModel.cs:104` [Medium] - // TODO: We may want a SemaphoreSlim lock here.
-- `todo-report.md:314` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI.ViewModels/PageViewModel.cs:124` [Medium] - // TODO: Do we want an event/signal here that the Page Views can listen to? (i.e. ListPage setting the selected index to 0, however, in async world the user may have already started navigating around page...)
-- `todo-report.md:315` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI.ViewModels/SettingsModel.cs:139` [Medium] - // TODO: Instead of just raising the event here, we should
-- `todo-report.md:316` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI.ViewModels/ShellViewModel.cs:58` [Medium] - // TODO: Handle failure case
-- `todo-report.md:317` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI.ViewModels/ShellViewModel.cs:93` [Medium] - // TODO: Handle failure case
-- `todo-report.md:318` [Low] - - `src/modules/cmdpal/Microsoft.CmdPal.UI.ViewModels/TopLevelCommandManager.cs:202` [Low] - // TODO In the future, we'll probably abstract some of this away, to have
-- `todo-report.md:319` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI/App.xaml.cs:91` [Medium] - // TODO: It's in the Labs feed, but we can use Sergio's AOT-friendly source generator for this: https://github.com/CommunityToolkit/Labs-Windows/discussions/463
-- `todo-report.md:320` [Low] - - `src/modules/cmdpal/Microsoft.CmdPal.UI/Controls/ContentFormControl.xaml.cs:52` [Low] - // TODO in the future, we should handle ActualThemeChanged and replace
-- `todo-report.md:321` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI/Controls/SearchBar.xaml.cs:46` [Medium] - //// TODO: If the Debounce timer hasn't fired, we may want to store the current Filter in the OldValue/prior VM, but we don't want that to go actually do work...
-- `todo-report.md:322` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI/Controls/SearchBar.xaml.cs:58` [Medium] - // TODO: In some cases we probably want commands to clear a filter
-- `todo-report.md:323` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI/Controls/SearchBar.xaml.cs:148` [Medium] - // hack TODO GH #245
-- `todo-report.md:324` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI/Controls/SearchBar.xaml.cs:159` [Medium] - // hack TODO GH #245
-- `todo-report.md:325` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI/Controls/SearchBar.xaml.cs:228` [Medium] - // TERRIBLE HACK TODO GH #245
-- `todo-report.md:326` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI/Controls/SearchBar.xaml.cs:243` [Medium] - // TODO: We could encapsulate this in a Behavior if we wanted to bind to the Filter property.
-- `todo-report.md:327` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI/ExtViews/ListPage.xaml:18` [Medium] - <!--  TODO: Figure out what we want to do here for filtering/grouping and where  -->
-- `todo-report.md:328` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI/Pages/LoadingPage.xaml.cs:39` [Medium] - // TODO: Handle failure case
-- `todo-report.md:329` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI/Pages/ShellPage.xaml.cs:126` [Medium] - // TODO: Actually loading up the page, or invoking the command -
-- `todo-report.md:330` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI/Pages/ShellPage.xaml.cs:182` [Medium] - // TODO GH #526 This needs more better locking too
-- `todo-report.md:331` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI/Pages/ShellPage.xaml.cs:224` [Medium] - // todo BODGY
-- `todo-report.md:332` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI/Pages/ShellPage.xaml.cs:249` [Medium] - // TODO GH #525 This needs more better locking.
-- `todo-report.md:333` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI/Pages/ShellPage.xaml.cs:313` [Medium] - // TODO: Maybe we need to style the primary button to be red?
-- `todo-report.md:334` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI/Pages/ShellPage.xaml.cs:437` [Medium] - // TERRIBLE HACK TODO GH #245
-- `todo-report.md:335` [Low] - - `src/modules/cmdpal/Microsoft.CmdPal.UI/Pages/ShellPage.xaml.cs:576` [Low] - // TODO: In the future we probably want a short cache (3-5?) of recent VMs in case the user re-navigates
-- `todo-report.md:366` [Medium] - - `src/modules/cmdpal/doc/initial-sdk-spec/initial-sdk-spec.md:1874` [Medium] - // TODO! Icon maybe? Work with design on this
-- `todo-report.md:367` [Medium] - - `src/modules/cmdpal/Microsoft.CmdPal.UI.ViewModels/PageViewModel.cs:106` [Medium] - // TODO: We may want to investigate using some sort of AsyncEnumerable or populating these as they come into the UI layer
-- `todo-report.md:368` [Medium] - - `src/modules/cmdpal/Microsoft.Terminal.UI/Converters.cpp:69` [Medium] - // double Converters::FontWeightToDouble(const winrt::Windows::UI::Text::FontWeight fontWeight)
-- `todo-report.md:369` [Medium] - - `src/modules/cmdpal/Microsoft.Terminal.UI/Converters.h:30` [Medium] - // static double FontWeightToDouble(winrt::Windows::UI::Text::FontWeight fontWeight);
-- `todo-report.md:417` [Medium] - - `src/modules/FileLocksmith/FileLocksmithContextMenu/dllmain.cpp:144` [Medium] - // TODO Aggregate items and send to UI
-- `todo-report.md:418` [Medium] - - `src/modules/FileLocksmith/FileLocksmithExt/ExplorerCommand.cpp:217` [Medium] - // TODO Aggregate items and send to UI
-- `todo-report.md:437` [Medium] - - `src/modules/imageresizer/ui/App.xaml:19` [Medium] - <v:AutoDoubleConverter x:Key="AutoDoubleConverter" />
-- `todo-report.md:438` [Medium] - - `src/modules/imageresizer/ui/Models/ResizeBatch.cs:93` [Medium] - // TODO: If we ever switch to Windows.Graphics.Imaging, we can get a lot more throughput by using the async
-- `todo-report.md:439` [Medium] - - `src/modules/imageresizer/ui/Views/AutoDoubleConverter.cs:21` [Medium] - internal class AutoDoubleConverter : IValueConverter
-- `todo-report.md:440` [Medium] - - `src/modules/imageresizer/ui/Views/InputPage.xaml:49` [Medium] - Text="{Binding Width, Converter={StaticResource AutoDoubleConverter}, ConverterParameter=Auto}" />
-- `todo-report.md:441` [Medium] - - `src/modules/imageresizer/ui/Views/InputPage.xaml:58` [Medium] - Text="{Binding Height, Converter={StaticResource AutoDoubleConverter}, ConverterParameter=Auto}"
-- `todo-report.md:442` [Medium] - - `src/modules/imageresizer/ui/Views/SizeTypeToHelpTextConverter.cs:33` [Medium] - _autoDoubleConverter.Convert(value, typeof(string), null, culture) as string;
-- `todo-report.md:453` [Medium] - - `src/modules/keyboardmanager/KeyboardManagerEditorLibrary/SingleKeyRemapControl.cpp:132` [Medium] - void SingleKeyRemapControl::TextToMapChangedHandler(winrt::Windows::Foundation::IInspectable const& sender, winrt::Windows::UI::Xaml::Controls::TextChangedEventArgs const& e) // TODO: remove
-- `todo-report.md:483` [Medium] - - `src/modules/launcher/Wox.Infrastructure/Storage/ISavable.cs:9` [Medium] - /// todo should be merged into a abstract class instead of separate interface
-- `todo-report.md:537` [Medium] - - `src/modules/MouseWithoutBorders/App/Class/MachinePool.cs:129` [Medium] - // TODO: would probably be cleaner interface as IEnumerable
-- `todo-report.md:558` [Medium] - - `src/modules/peek/Peek.UI/PeekXAML/MainWindow.xaml.cs:226` [Medium] - // TODO: Investigate why portrait images do not perfectly fit edge-to-edge --> WindowHeightContentPadding can be 0 (or close to that) if custom? [Jay]
 
 
 #### Tools (64 TODOs)
 
 **Bug Fix** (1 items):
 
-- `tools/build/collect-todos.ps1:77` [Medium] - } elseif ($TodoText -match "(?i)\b(bug|fix|error|issue|crash|exception)\b") {
 
 **Feature** (1 items):
 
-- `tools/build/collect-todos.ps1:79` [Medium] - } elseif ($TodoText -match "(?i)\b(feature|implement|add|new|enhancement)\b") {
 
 **General** (55 items):
 
-- `tools/build/collect-todos.ps1:3` [Medium] - # PowerToys TODO Collection Script
-- `tools/build/collect-todos.ps1:4` [Medium] - # This script scans the PowerToys codebase and generates a comprehensive report of all TODO items
-- `tools/build/collect-todos.ps1:8` [Medium] - [string]$OutputPath = ".\todo-report.md",
-- `tools/build/collect-todos.ps1:13` [Medium] - Write-Host "PowerToys TODO Collection Script"
-- `tools/build/collect-todos.ps1:15` [Medium] - Write-Host "Usage: .\collect-todos.ps1 [-OutputPath <path>] [-ShowHelp]"
-- `tools/build/collect-todos.ps1:18` [Medium] - Write-Host "  -OutputPath   Path where the TODO report will be saved (default: ./todo-report.md)"
-- `tools/build/collect-todos.ps1:22` [Medium] - Write-Host "  .\collect-todos.ps1 -OutputPath .\docs\todo-analysis.md"
-- `tools/build/collect-todos.ps1:31` [Medium] - Write-Host "Scanning PowerToys repository for TODO items..."
-- `tools/build/collect-todos.ps1:34` [Medium] - # Use grep to find all TODOs
-- `tools/build/collect-todos.ps1:35` [Medium] - Write-Host "Collecting TODO items using grep..."
-- `tools/build/collect-todos.ps1:39` [Medium] - Write-Warning "No TODO items found or grep command failed"
-- `tools/build/collect-todos.ps1:43` [Medium] - Write-Host "Processing $($GrepOutput.Count) TODO items..."
-- `tools/build/collect-todos.ps1:46` [Medium] - $TodoItems = @()
-- `tools/build/collect-todos.ps1:51` [Medium] - $TodoText = $Matches[3].Trim()
-- `tools/build/collect-todos.ps1:71` [Medium] - # Categorize TODO by keywords
-- `tools/build/collect-todos.ps1:93` [High] - if ($TodoText -match "(?i)\b(critical|urgent|important|asap|high priority)\b") {
-- `tools/build/collect-todos.ps1:95` [Low] - } elseif ($TodoText -match "(?i)\b(low priority|nice to have|future|someday|optional)\b") {
-- `tools/build/collect-todos.ps1:99` [Medium] - $TodoItems += [PSCustomObject]@{
-- `tools/build/collect-todos.ps1:105` [Medium] - Text = $TodoText
-- `tools/build/collect-todos.ps1:110` [Medium] - $TodoCount = $TodoItems.Count
-- `tools/build/collect-todos.ps1:111` [Medium] - Write-Host "Found $TodoCount TODO items." -ForegroundColor Green
-- `tools/build/collect-todos.ps1:114` [Medium] - Write-Host "Generating TODO report at: $OutputPath"
-- `tools/build/collect-todos.ps1:117` [Medium] - # PowerToys TODO Report
-- `tools/build/collect-todos.ps1:121` [Medium] - Total TODO items found: $TodoCount
-- `tools/build/collect-todos.ps1:128` [Medium] - $ComponentSummary = $TodoItems | Group-Object Component | Sort-Object Count -Descending
-- `tools/build/collect-todos.ps1:130` [Medium] - $ReportContent += "- **$($Group.Name)**: $($Group.Count) TODOs`n"
-- `tools/build/collect-todos.ps1:140` [Medium] - $CategorySummary = $TodoItems | Group-Object Category | Sort-Object Count -Descending
-- `tools/build/collect-todos.ps1:142` [Medium] - $ReportContent += "- **$($Group.Name)**: $($Group.Count) TODOs`n"
-- `tools/build/collect-todos.ps1:152` [Medium] - $PrioritySummary = $TodoItems | Group-Object Priority | Sort-Object @{Expression={if($_.Name -eq "High") {3} elseif($_.Name -eq "Medium") {2} else {1}}} -Descending
-- `tools/build/collect-todos.ps1:154` [Medium] - $ReportContent += "- **$($Group.Name)**: $($Group.Count) TODOs`n"
-- `tools/build/collect-todos.ps1:159` [Medium] - ## Detailed TODO List
-- `tools/build/collect-todos.ps1:161` [High] - ### High Priority TODOs
-- `tools/build/collect-todos.ps1:165` [High] - # High priority TODOs
-- `tools/build/collect-todos.ps1:166` [Medium] - $HighPriorityTodos = $TodoItems | Where-Object { $_.Priority -eq "High" } | Sort-Object Component, File
-- `tools/build/collect-todos.ps1:167` [Medium] - foreach ($Todo in $HighPriorityTodos) {
-- `tools/build/collect-todos.ps1:168` [Medium] - $ReportContent += "- **[$($Todo.Component)]** ``$($Todo.File):$($Todo.LineNumber)`` - $($Todo.Text)`n"
-- `tools/build/collect-todos.ps1:171` [Medium] - if ($HighPriorityTodos.Count -eq 0) {
-- `tools/build/collect-todos.ps1:172` [High] - $ReportContent += "*No high priority TODOs found.*`n"
-- `tools/build/collect-todos.ps1:177` [Medium] - ### TODOs by Component
-- `tools/build/collect-todos.ps1:182` [Medium] - $TodosByComponent = $TodoItems | Sort-Object Component, Category, File | Group-Object Component
-- `tools/build/collect-todos.ps1:184` [Medium] - foreach ($ComponentGroup in $TodosByComponent) {
-- `tools/build/collect-todos.ps1:187` [Medium] - $ReportContent += "`n#### $($ComponentGroup.Name) ($($ComponentGroup.Count) TODOs)`n`n"
-- `tools/build/collect-todos.ps1:188` [Medium] - $ReportContent += "*Monaco TODOs excluded from detailed listing for brevity. Most are related to third-party library code.*`n`n"
-- `tools/build/collect-todos.ps1:192` [Medium] - $ReportContent += "`n#### $($ComponentGroup.Name) ($($ComponentGroup.Count) TODOs)`n`n"
-- `tools/build/collect-todos.ps1:194` [Medium] - $TodosByCategory = $ComponentGroup.Group | Group-Object Category
-- `tools/build/collect-todos.ps1:195` [Medium] - foreach ($CategoryGroup in $TodosByCategory) {
-- `tools/build/collect-todos.ps1:198` [Medium] - foreach ($Todo in $CategoryGroup.Group | Sort-Object File, LineNumber) {
-- `tools/build/collect-todos.ps1:199` [Medium] - $ReportContent += "- ``$($Todo.File):$($Todo.LineNumber)`` [$($Todo.Priority)] - $($Todo.Text)`n"
-- `tools/build/collect-todos.ps1:227` [Medium] - *This report was generated automatically by the PowerToys TODO collection script.*
-- `tools/build/collect-todos.ps1:235` [Medium] - Write-Host "TODO report successfully saved to: $OutputPath" -ForegroundColor Green
-- `tools/build/collect-todos.ps1:238` [Medium] - Write-Host "- Total TODOs: $TodoCount" -ForegroundColor White
-- `tools/build/collect-todos.ps1:239` [High] - Write-Host "- High Priority: $(($TodoItems | Where-Object { $_.Priority -eq 'High' }).Count)" -ForegroundColor Red
-- `tools/build/collect-todos.ps1:240` [Medium] - Write-Host "- Medium Priority: $(($TodoItems | Where-Object { $_.Priority -eq 'Medium' }).Count)" -ForegroundColor Yellow
-- `tools/build/collect-todos.ps1:241` [Low] - Write-Host "- Low Priority: $(($TodoItems | Where-Object { $_.Priority -eq 'Low' }).Count)" -ForegroundColor Green
-- `tools/build/collect-todos.ps1:243` [Medium] - Write-Host "Top components with TODOs:" -ForegroundColor Cyan
 
 **Logging/Debug** (2 items):
 
-- `tools/build/collect-todos.ps1:36` [Medium] - $GrepOutput = & grep -r -i -n "todo" --include="*.cpp" --include="*.cs" --include="*.h" --include="*.hpp" --include="*.c" --include="*.cc" --include="*.cxx" --include="*.js" --include="*.ts" --include="*.py" --include="*.md" --include="*.txt" --include="*.xaml" --include="*.xml" --include="*.ps1" --exclude-dir=".git" --exclude-dir="node_modules" --exclude-dir="bin" --exclude-dir="obj" --exclude-dir="packages" --exclude-dir=".vs" --exclude-dir="Debug" --exclude-dir="Release" --exclude-dir="x64" --exclude-dir="x86" --exclude-dir="target" . 2>$null
-- `tools/build/collect-todos.ps1:87` [Medium] - } elseif ($TodoText -match "(?i)\b(log|logging|diagnostic|debug)\b") {
 
 **Performance** (1 items):
 
-- `tools/build/collect-todos.ps1:73` [Medium] - if ($TodoText -match "(?i)\b(performance|perf|speed|slow|optimize|optimization)\b") {
 
 **Refactoring** (1 items):
 
-- `tools/build/collect-todos.ps1:81` [Medium] - } elseif ($TodoText -match "(?i)\b(refactor|cleanup|clean|organize|restructure)\b") {
 
 **Security** (1 items):
 
-- `tools/build/collect-todos.ps1:85` [Medium] - } elseif ($TodoText -match "(?i)\b(security|auth|permission|privilege)\b") {
 
 **Testing** (1 items):
 
-- `tools/build/collect-todos.ps1:75` [Medium] - } elseif ($TodoText -match "(?i)\b(test|testing|unit test|integration)\b") {
 
 **UI/UX** (1 items):
 
-- `tools/build/collect-todos.ps1:83` [Medium] - } elseif ($TodoText -match "(?i)\b(ui|ux|interface|design|layout)\b") {
 
 
 ---
