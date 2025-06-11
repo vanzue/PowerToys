@@ -33,7 +33,7 @@ Write-Host "Repository root: $RepoRoot"
 
 # Use grep to find all TODOs
 Write-Host "Collecting TODO items using grep..."
-$GrepOutput = & grep -r -i -n "todo" --include="*.cpp" --include="*.cs" --include="*.h" --include="*.hpp" --include="*.c" --include="*.cc" --include="*.cxx" --include="*.js" --include="*.ts" --include="*.py" --include="*.md" --include="*.txt" --include="*.xaml" --include="*.xml" --exclude-dir=".git" --exclude-dir="node_modules" --exclude-dir="bin" --exclude-dir="obj" --exclude-dir="packages" --exclude-dir=".vs" --exclude-dir="Debug" --exclude-dir="Release" --exclude-dir="x64" --exclude-dir="x86" --exclude-dir="target" . 2>$null
+$GrepOutput = & grep -r -i -n "todo" --include="*.cpp" --include="*.cs" --include="*.h" --include="*.hpp" --include="*.c" --include="*.cc" --include="*.cxx" --include="*.js" --include="*.ts" --include="*.py" --include="*.md" --include="*.txt" --include="*.xaml" --include="*.xml" --include="*.ps1" --exclude-dir=".git" --exclude-dir="node_modules" --exclude-dir="bin" --exclude-dir="obj" --exclude-dir="packages" --exclude-dir=".vs" --exclude-dir="Debug" --exclude-dir="Release" --exclude-dir="x64" --exclude-dir="x86" --exclude-dir="target" . 2>$null
 
 if (-not $GrepOutput) {
     Write-Warning "No TODO items found or grep command failed"
@@ -182,6 +182,13 @@ $ReportContent += @"
 $TodosByComponent = $TodoItems | Sort-Object Component, Category, File | Group-Object Component
 
 foreach ($ComponentGroup in $TodosByComponent) {
+    # Exclude Monaco from detailed coverage (user requested overview only)
+    if ($ComponentGroup.Name -eq "Core: Monaco") {
+        $ReportContent += "`n#### $($ComponentGroup.Name) ($($ComponentGroup.Count) TODOs)`n`n"
+        $ReportContent += "*Monaco TODOs excluded from detailed listing for brevity. Most are related to third-party library code.*`n`n"
+        continue
+    }
+    
     $ReportContent += "`n#### $($ComponentGroup.Name) ($($ComponentGroup.Count) TODOs)`n`n"
     
     $TodosByCategory = $ComponentGroup.Group | Group-Object Category
