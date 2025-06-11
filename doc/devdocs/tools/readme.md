@@ -17,4 +17,5 @@ Following tools are currently available:
 * [Monitor info report](monitor-info-report.md) - A small diagnostic tool which helps identifying WinAPI bugs related to the physical monitor detection.
 * [project template](/tools/project_template/README.md) - A Visual Studio project template for a new PowerToys project.
 * [StylesReportTool](styles-report-tool.md) - A tool to collect information about an open window.
+* [TODO Collection Tool](todo-collection-tool.md) - A tool to scan the codebase and generate a comprehensive report of all TODO items for prioritization.
 * [Verification scripts](verification-scripts.md) - A set of scripts that help verifying the PowerToys installation.

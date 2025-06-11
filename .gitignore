@@ -353,3 +353,6 @@ src/common/Telemetry/*.etl
 
 # MSBuildCache
 /MSBuildCacheLogs/
+
+# Generated TODO report (created by tools/build/collect-todos.ps1)
+todo-report.md
