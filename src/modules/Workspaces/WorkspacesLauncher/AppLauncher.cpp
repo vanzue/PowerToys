@@ -165,16 +165,36 @@ namespace AppLauncher
 
         if (!launched && !app.pwaAppId.empty())
         {
-            std::filesystem::path appPath(app.path);
-            if (appPath.filename() == NonLocalizable::EdgeFilename)
+            // First try to launch PWA using its AppUserModelId via the shell if available
+            if (!app.appUserModelId.empty())
             {
-                appPathFinal = appPath.parent_path() / NonLocalizable::EdgePwaFilename;
-                commandLineArgsFinal = NonLocalizable::PwaCommandLineAddition + app.pwaAppId + L" " + app.commandLineArgs;
+                Logger::trace(L"Launching PWA {} using shell:AppsFolder and AppUserModelId", app.name);
+                auto res = LaunchApp(L"shell:AppsFolder\\" + app.appUserModelId, app.commandLineArgs, app.isElevated);
+                if (res.isOk())
+                {
+                    launched = true;
+                }
+                else
+                {
+                    Logger::info(L"Failed to launch PWA via shell:AppsFolder, falling back to browser proxy: {}", res.error());
+                    launchErrors.push_back({ app.name, res.error() });
+                }
             }
-            if (appPath.filename() == NonLocalizable::ChromeFilename)
+            
+            // Fall back to the old method if launching via shell failed or AppUserModelId is not available
+            if (!launched)
             {
-                appPathFinal = appPath.parent_path() / NonLocalizable::ChromePwaFilename;
-                commandLineArgsFinal = NonLocalizable::PwaCommandLineAddition + app.pwaAppId + L" " + app.commandLineArgs;
+                std::filesystem::path appPath(app.path);
+                if (appPath.filename() == NonLocalizable::EdgeFilename)
+                {
+                    appPathFinal = appPath.parent_path() / NonLocalizable::EdgePwaFilename;
+                    commandLineArgsFinal = NonLocalizable::PwaCommandLineAddition + app.pwaAppId + L" " + app.commandLineArgs;
+                }
+                if (appPath.filename() == NonLocalizable::ChromeFilename)
+                {
+                    appPathFinal = appPath.parent_path() / NonLocalizable::ChromePwaFilename;
+                    commandLineArgsFinal = NonLocalizable::PwaCommandLineAddition + app.pwaAppId + L" " + app.commandLineArgs;
+                }
             }
         }
 
