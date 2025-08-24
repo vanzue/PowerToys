@@ -93,7 +93,17 @@ GeneralSettings get_general_settings()
         .powerToysVersion = get_product_version()
     };
 
-    settings.isStartupEnabled = is_auto_start_task_active_for_this_user();
+    // Read startup setting from the saved settings file first
+    auto loaded = PTSettingsHelper::load_general_settings();
+    if (json::has(loaded, L"startup", json::JsonValueType::Boolean))
+    {
+        settings.isStartupEnabled = loaded.GetNamedBoolean(L"startup");
+    }
+    else
+    {
+        // Fall back to checking the task scheduler if not found in settings
+        settings.isStartupEnabled = is_auto_start_task_active_for_this_user();
+    }
 
     for (auto& [name, powertoy] : modules())
     {
@@ -230,6 +240,25 @@ void apply_general_settings(const json::JsonObject& general_configs, bool save)
     if (save)
     {
         GeneralSettings save_settings = get_general_settings();
+        
+        // Ensure startup setting is saved based on what was requested, not just task scheduler state
+        if (json::has(general_configs, L"startup", json::JsonValueType::Boolean))
+        {
+            bool startup = general_configs.GetNamedBoolean(L"startup");
+            // Honor GPO settings if applicable
+            auto local_gpo_rule = powertoys_gpo::getConfiguredRunAtStartupValue();
+            if (local_gpo_rule == powertoys_gpo::gpo_rule_configured_enabled)
+            {
+                startup = true;
+            }
+            else if (local_gpo_rule == powertoys_gpo::gpo_rule_configured_disabled)
+            {
+                startup = false;
+            }
+            // Store the actual setting regardless of task creation success
+            save_settings.isStartupEnabled = startup;
+        }
+        
         PTSettingsHelper::save_general_settings(save_settings.to_json());
         Trace::SettingsChanged(save_settings);
     }
