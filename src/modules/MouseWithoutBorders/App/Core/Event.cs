@@ -68,6 +68,13 @@ internal static class Event
             Common.PaintCount = 0;
             bool switchByMouseEnabled = IsSwitchingByMouseEnabled();
 
+            // Check if we should disable switching due to fullscreen mode
+            if (switchByMouseEnabled && Setting.Values.DisableInFullscreenMode && Common.IsWindowFullscreen())
+            {
+                // Skip machine switching in fullscreen mode when the DisableInFullscreenMode setting is enabled
+                return;
+            }
+
             if (switchByMouseEnabled && Common.Sk != null && (Common.DesMachineID == Common.MachineID || !Setting.Values.MoveMouseRelatively) && e.dwFlags == Common.WM_MOUSEMOVE)
             {
                 Point p = MachineStuff.MoveToMyNeighbourIfNeeded(e.X, e.Y, MachineStuff.desMachineID);

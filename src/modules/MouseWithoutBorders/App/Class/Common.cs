@@ -1513,6 +1513,54 @@ namespace MouseWithoutBorders
             return buffer.ToString();
         }
 
+        private static bool? cachedFullscreenState;
+        private static long lastFullscreenCheckTime;
+        private const int FULLSCREEN_CHECK_INTERVAL_MS = 500; // Check every 500ms
+
+        internal static bool IsWindowFullscreen()
+        {
+            long currentTime = GetTick();
+
+            // If we have a cached state and it's not expired yet, return the cached value
+            if (cachedFullscreenState.HasValue && (currentTime - lastFullscreenCheckTime) < FULLSCREEN_CHECK_INTERVAL_MS)
+            {
+                return cachedFullscreenState.Value;
+            }
+
+            // Cache expired or not set, perform the actual check
+            try
+            {
+                uint state = 0;
+
+                // Use SHQueryUserNotificationState to check if a fullscreen app is running
+                // https://learn.microsoft.com/en-us/windows/win32/api/shellapi/ne-shellapi-query_user_notification_state
+                int result = NativeMethods.SHQueryUserNotificationState(out state);
+                if (result == 0) // S_OK
+                {
+                    // QUNS_RUNNING_D3D_FULL_SCREEN = 2
+                    // QUNS_BUSY = 3
+                    // QUNS_PRESENTATION_MODE = 4
+                    if (state == 2 || state == 3 || state == 4)
+                    {
+                        cachedFullscreenState = true;
+                        lastFullscreenCheckTime = currentTime;
+                        return true;
+                    }
+                }
+
+                cachedFullscreenState = false;
+                lastFullscreenCheckTime = currentTime;
+            }
+            catch (Exception e)
+            {
+                Logger.Log(e);
+
+                // In case of error, don't update the cache
+            }
+
+            return cachedFullscreenState ?? false;
+        }
+
         internal static void MMSleep(double secs)
         {
             for (int i = 0; i < secs * 10; i++)
