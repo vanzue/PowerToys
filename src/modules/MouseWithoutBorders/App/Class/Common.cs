@@ -780,6 +780,46 @@ namespace MouseWithoutBorders
                 });
             }
         }
+        
+        /// <summary>
+        /// Shows an error message dialog for connection problems.
+        /// In addition to showing a tooltip, displays a message box with the error details.
+        /// </summary>
+        /// <param name="errorTitle">Brief error title</param>
+        /// <param name="errorMessage">Detailed error message</param>
+        /// <param name="timeOutInMilliseconds">Tooltip timeout in milliseconds</param>
+        /// <param name="showTooltip">Whether to show the tooltip in addition to the message box</param>
+        internal static void ShowConnectionError(string errorTitle, string errorMessage, int timeOutInMilliseconds = 5000, bool showTooltip = true)
+        {
+            if (!Common.RunOnLogonDesktop && !Common.RunOnScrSaverDesktop)
+            {
+                // Log the error
+                Logger.Log($"Connection Error: {errorTitle} - {errorMessage}");
+                
+                if (showTooltip)
+                {
+                    // Show the tooltip as before
+                    ShowToolTip(errorMessage, timeOutInMilliseconds, ToolTipIcon.Error, true);
+                }
+                
+                // Show the error message box on the UI thread
+                DoSomethingInUIThread(() =>
+                {
+                    try
+                    {
+                        _ = MessageBox.Show(
+                            errorMessage,
+                            $"{Application.ProductName} - {errorTitle}",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Error);
+                    }
+                    catch (Exception ex)
+                    {
+                        Logger.Log($"Failed to show error dialog: {ex.Message}");
+                    }
+                });
+            }
+        }
 
         private static FrmMessage topMostMessageForm;
 
